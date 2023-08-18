@@ -30,8 +30,8 @@ Route::get('/dons',[App\Http\Controllers\ClientController::class,'dons']);
 Route::get('/inscription', [RegisterController::class, 'showRegistrationForm'])->name('register');
 Route::post('/inscription', [RegisterController::class, 'register']);
 
-Route::get('/inscription-hopital', [HospitalController::class, 'showRegistrationForm'])->name('hopital.register');
-Route::post('/inscription-hopital', [HospitalController::class, 'hopital.register']);
+Route::get('/inscription-hopital', [RegisterController::class, 'showRegistrationForm2'])->name('register2');
+Route::post('/inscription-hopital', [RegisterController::class, 'register2']);
 
 Auth::routes();
 

@@ -28,7 +28,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header text-center bg-primary text-white">{{ __('Connexion') }}</div>
+                    <div class="card-header text-center bg-danger text-white">{{ __('Connexion') }}</div>
     
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
@@ -82,8 +82,8 @@
                             </div>
     
                             <div class="form-group row mb-0">
-                                <div class="w-100 btn btn-lg btn-primary">
-                                    <button type="submit" class="btn btn-danger">
+                                <div class="w-100 btn btn-lg btn-danger">
+                                    <button type="submit" class="btn btn-primary">
                                         {{ __('Connexion') }}
                                     </button>
     

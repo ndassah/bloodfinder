@@ -26,8 +26,8 @@
     <div class="container c1">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header text-center bg-primary text-white ">{{ __('Inscription') }}</div>
+                <div class="card ">
+                    <div class="card-header text-center bg-danger text-white ">{{ __('Inscription') }}</div>
     
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}">
@@ -179,26 +179,28 @@
     
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-danger">
                                         {{ __('S\'inscrire') }}
                                     </button>
                                 </div>
                             </div>
                            
-                                <div class="row mb-3">
+                              <div class="row">
+                                <div class="col mb-2">
                                     <div class="form-check">
-                                        <a class="btn btn-link" href="{{ route('hopital.register') }}">
-                                            {{ __('je suis un hopital') }}
+                                        <a class="btn btn-link" href="{{ route('register2') }}">
+                                            {{ __('s\'inscrire en tant que hopital') }}
                                         </a>
                                     </div>
                                 </div>
-                                <div class="row mb-3">
+                                <div class="col mb-2">
                                     <div class="form-check">
                                         <a class="btn btn-link"  href="{{URL::to('login')}}">
                                             {{ __('j\'ai déjà un compte') }}
                                         </a>
                                     </div>
                                 </div>
+                              </div>
                            
                            
                         </form>

@@ -30,7 +30,7 @@
 							<i class="icofont-surgeon-alt"></i>
 						</div>
 						<span>24 Heures de service</span>
-						<h4 class="mb-3">annonce de dons</h4>
+						<h4 class="mb-3">Publication d'annonces</h4>
 						<p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem minus, quia ullam quaerat vitae dolorum sit non quam delectus culpa, perferendis soluta consectetur ipsam quae tempore maxime atque vel possimus?</p>
 						<a href="#annonces" class="btn btn-main btn-round-full">annonce</a>
 					</div>
@@ -39,8 +39,8 @@
 						<div class="feature-icon mb-4">
 							<i class="icofont-ui-clock"></i>
 						</div>
-						<span>Timing schedule</span>
-						<h4 class="mb-3">horaires & localitee</h4>
+						<span>Timing</span>
+						<h4 class="mb-3">horaires & localites</h4>
 						<ul class="w-hours list-unstyled">
 		                    <li class="d-flex justify-content-between">jours: <span>7/7</span></li>
 		                    <li class="d-flex justify-content-between">DLA-YDE-BAF</li>
