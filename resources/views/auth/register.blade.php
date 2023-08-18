@@ -74,6 +74,19 @@
                                     @enderror
                                 </div>
                             </div>
+                            <div class="form-group row">
+                                <label for="cni" class="col-md-4 col-form-label text-md-right">{{ __('numero cni') }}</label>
+    
+                                <div class="col-md-6">
+                                    <input id="cni" type="text" class="form-control rounded @error('cni') is-invalid @enderror" name="cni" value="{{ old('cni') }}" required autocomplete="cni">
+    
+                                    @error('cni')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
 
                             <div class="form-group row">
                                 <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Mot de passe') }}</label>
@@ -171,6 +184,23 @@
                                     </button>
                                 </div>
                             </div>
+                           
+                                <div class="row mb-3">
+                                    <div class="form-check">
+                                        <a class="btn btn-link"  href="{{URL::to('register2')}}">
+                                            {{ __('je suis un hopital') }}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="form-check">
+                                        <a class="btn btn-link"  href="{{URL::to('login')}}">
+                                            {{ __('j\'ai déjà un compte') }}
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                           
                         </form>
                     </div>
                 </div>

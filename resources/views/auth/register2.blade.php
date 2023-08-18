@@ -34,20 +34,6 @@
                             @csrf
     
                             <div class="form-group row">
-                                <label for="first_name" class="col-md-4 col-form-label text-md-right">{{ __('Prénom') }}</label>
-    
-                                <div class="col-md-6">
-                                    <input id="first_name" type="text" class="form-control rounded @error('first_name') is-invalid @enderror" name="first_name" value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>
-    
-                                    @error('first_name')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-    
-                            <div class="form-group row">
                                 <label for="last_name" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
     
                                 <div class="col-md-6">
@@ -117,46 +103,6 @@
                                     <input id="location" type="text" class="form-control rounded @error('location') is-invalid @enderror" name="location" value="{{ old('location') }}" required autocomplete="location">
     
                                     @error('location')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-    
-                            <div class="form-group row">
-                                <label for="gender" class="col-md-4 col-form-label text-md-right">{{ __('Sexe') }}</label>
-    
-                                <div class="col-md-6">
-                                    <select id="gender" class="form-control rounded @error('gender') is-invalid @enderror" name="gender" required>
-                                        <option value="male">Homme</option>
-                                        <option value="female">Femme</option>
-                                    </select>
-    
-                                    @error('gender')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-    
-                            <div class="form-group row">
-                                <label for="blood_group" class="col-md-4 col-form-label text-md-right">{{ __('Groupe sanguin') }}</label>
-    
-                                <div class="col-md-6">
-                                    <select id="blood_group" class="form-control rounded @error('blood_group') is-invalid @enderror" name="blood_group" required>
-                                        <option value="A+">A+</option>
-                                        <option value="A-">A-</option>
-                                        <option value="B+">B+</option>
-                                        <option value="B-">B-</option>
-                                        <option value="AB+">AB+</option>
-                                        <option value="AB-">AB-</option>
-                                        <option value="O+">O+</option>
-                                        <option value="O-">O-</option>
-                                    </select>
-    
-                                    @error('blood_group')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
