@@ -27,13 +27,13 @@ Route::get('/demandes',[App\Http\Controllers\ClientController::class,'demandes']
 Route::get('/dons',[App\Http\Controllers\ClientController::class,'dons']);
 
 
-Route::get('/profile',[App\Http\Controllers\ClientController::class,'profile']);
-Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
-Route::post('/register', [RegisterController::class, 'register']);
+Route::get('/inscription', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('/inscription', [RegisterController::class, 'register']);
+
+Route::get('/inscription-hopital', [HospitalController::class, 'showRegistrationForm'])->name('hopital.register');
+Route::post('/inscription-hopital', [HospitalController::class, 'hopital.register']);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

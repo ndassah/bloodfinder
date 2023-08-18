@@ -187,7 +187,7 @@
                            
                                 <div class="row mb-3">
                                     <div class="form-check">
-                                        <a class="btn btn-link"  href="{{URL::to('register2')}}">
+                                        <a class="btn btn-link" href="{{ route('hopital.register') }}">
                                             {{ __('je suis un hopital') }}
                                         </a>
                                     </div>

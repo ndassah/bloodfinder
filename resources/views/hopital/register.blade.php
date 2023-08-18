@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bloodfinder</title>
 
-       <!-- Favicon 
+     <!-- Favicon 
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />-->
 
   <!-- bootstrap.min css -->
@@ -20,8 +20,8 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="frontend/css/style.css">
 </head>
-<body>
-
+<body class="b1">
+    
 
     <div class="container c1">
         <div class="row justify-content-center">
@@ -54,6 +54,19 @@
                                     <input id="email" type="email" class="form-control rounded @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
     
                                     @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="matricule" class="col-md-4 col-form-label text-md-right">{{ __('numero immatriculation') }}</label>
+    
+                                <div class="col-md-6">
+                                    <input id="matricule" type="text" class="form-control rounded @error('cni') is-invalid @enderror" name="matricule" value="{{ old('matricule') }}" required autocomplete="matricule">
+    
+                                    @error('matricule')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -109,6 +122,7 @@
                                     @enderror
                                 </div>
                             </div>
+
     
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
@@ -117,6 +131,23 @@
                                     </button>
                                 </div>
                             </div>
+                           
+                                <div class="row mb-3">
+                                    <div class="form-check">
+                                        <a class="btn btn-link"  href="{{URL::to('auth.register')}}">
+                                            {{ __('je suis un particulier') }}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="form-check">
+                                        <a class="btn btn-link"  href="{{URL::to('login')}}">
+                                            {{ __('j\'ai déjà un compte') }}
+                                        </a>
+                                    </div>
+                                </div>
+                           
+                           
                         </form>
                     </div>
                 </div>
@@ -124,7 +155,7 @@
         </div>
     </div>
 
-<!-- 
+    <!-- 
     Essential Scripts
     =====================================-->
 
