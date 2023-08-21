@@ -37,3 +37,12 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/dashboard',[App\Http\Controllers\AdminController::class,'dashboard']);
+/*Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/dashboard', 'AdminController@index')->name('admin.dashboard');
+    Route::get('/users', 'AdminController@users')->name('admin.users');
+    Route::get('/donors', 'AdminController@donors')->name('admin.donors');
+    Route::get('/blood-requests', 'AdminController@bloodRequests')->name('admin.bloodRequests');
+    // Ajoutez d'autres routes pour les sections du dashboard
+});
+*/

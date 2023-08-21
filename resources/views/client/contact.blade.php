@@ -111,8 +111,4 @@
     </div>
 </section>
 
-
- <div class="google-map ">
-    <div id="map"></div>
-</div>
 @endsection
