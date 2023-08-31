@@ -64,7 +64,7 @@
 			<div class="col-lg-7">
 				<div class="cta-content">
 					<div class="divider mb-4"></div>
-					<h2 class="mb-5 text-lg">Nous sommes heureux de vous offrir la possibilitée <span class="title-color">d'avoir une bonne santé</span></h2>
+					<h2 class="mb-5 text-lg red">Nous sommes heureux de vous offrir la possibilitée <span class=" red2">d'avoir une bonne santé</span></h2>
 					<a href="{{URL::to('demande')}}" class="btn btn-main-2 btn-round-full">faire une demande<i class="icofont-simple-right  ml-2"></i></a>
 				</div>
 			</div>

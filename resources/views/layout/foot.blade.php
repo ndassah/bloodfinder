@@ -31,7 +31,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<ul class="top-bar-info list-inline-item pl-0 mb-0">
-						<li class="list-inline-item"><a href="mailto:mohamedtariq150@gmail.com"><i class="icofont-support-faq mr-2"></i>mohamedtariq150@gmail.com</a></li>
+						<li class="list-inline-item"><a href="mailto:mohamedtariq150@gmail.com"><i class="icofont-support-faq mr-2"></i>Bloodfinder@gmail.com</a></li>
 						<li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Address DLA, Cameroun </li>
 					</ul>
 				</div>
@@ -106,8 +106,8 @@
 					<div class="divider mb-4"></div>
 
 					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">Dons de sang </a></li>
-						<li><a href="#">Demande de dons</a></li>
+						<li><a href="#annonces">Dons de sang </a></li>
+						<li><a href="#annonces">Demande de dons</a></li>
 					</ul>
 				</div>
 			</div>
@@ -136,7 +136,7 @@
 							<i class="icofont-email mr-3"></i>
 							<span class="h6 mb-0">Support disponible  24/7</span>
 						</div>
-						<h4 class="mt-2"><a href="tel:+237 694914695">mohamedtariq150@gmail.com</a></h4>
+						<h4 class="mt-2"><a href="mailto: mohamedtariq150@gmail.com">Bloodfinder@gmail.com</a></h4>
 					</div>
 
 					<div class="footer-contact-block">

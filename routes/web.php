@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\DonneursController;
+use App\Http\Controllers\HopitaleController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\RegisterController;
 /*
 |--------------------------------------------------------------------------
@@ -25,24 +28,26 @@ Route::get('/service',[App\Http\Controllers\ClientController::class,'service']);
 Route::get('/annonces',[App\Http\Controllers\ClientController::class,'annonces']);
 Route::get('/demandes',[App\Http\Controllers\ClientController::class,'demandes']);
 Route::get('/dons',[App\Http\Controllers\ClientController::class,'dons']);
+Route::get('/login',[App\Http\Controllers\ClientController::class,'login']);
 
 
-Route::get('/inscription', [RegisterController::class, 'showRegistrationForm'])->name('register');
-Route::post('/inscription', [RegisterController::class, 'register']);
 
-Route::get('/inscription-hopital', [RegisterController::class, 'showRegistrationForm2'])->name('register2');
-Route::post('/inscription-hopital', [RegisterController::class, 'register2']);
+Route::get('/inscription', [DonneursController::class, 'showRegistrationForm'])->name('register');
+Route::resource('donneur', DonneursController::class)
+        ->only(['index','store','edit','update','destroy']);
+
+        
+Route::get('/inscription-hosto', [HopitaleController::class, 'showRegistrationForm'])->name('register2');
+Route::resource('hopitale', HopitaleController::class)
+        ->only(['index','store','edit','update','destroy']);
+
+Route::get('/bloodfinder-admin',[App\Http\Controllers\AdminController::class,'dash']);
+Route::get('/bloodfinder-404',[App\Http\Controllers\AdminController::class,'t404']);
+Route::get('/bloodfinder-admin-data',[App\Http\Controllers\AdminController::class,'tables']);
+Route::get('/bloodfinder-admin-stat',[App\Http\Controllers\AdminController::class,'stat']);
+Route::get('/bloodfinder-admin-empty',[App\Http\Controllers\AdminController::class,'blank']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/dashboard',[App\Http\Controllers\AdminController::class,'dashboard']);
-/*Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('/dashboard', 'AdminController@index')->name('admin.dashboard');
-    Route::get('/users', 'AdminController@users')->name('admin.users');
-    Route::get('/donors', 'AdminController@donors')->name('admin.donors');
-    Route::get('/blood-requests', 'AdminController@bloodRequests')->name('admin.bloodRequests');
-    // Ajoutez d'autres routes pour les sections du dashboard
-});
-*/
+

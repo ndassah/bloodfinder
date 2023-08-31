@@ -78,7 +78,7 @@
 			</div>
 			<div class="col-lg-4">
 				<div class="about-content pl-4 mt-4 mt-lg-0">
-					<h2 class="title-color">Dons de sang <br>& sante</h2>
+					<h2 class="title-color">Dons de sang <br>& recherches de donneurs</h2>
 					<p class="mt-4 mb-5">nous proposons le meilleur Services de recherches, d'offre et de demande de dons de sang au Cameroun. </p>
 
 					<a href="<?php echo e(URL::to('service')); ?>" class="btn btn-main-2 btn-round-full btn-icon">Services<i class="icofont-simple-right ml-3"></i></a>
@@ -101,7 +101,7 @@
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="counter-stat">
 						<i class="icofont-flag"></i>
-						<span class="h3">2</span>M+
+						<span class="h3">5</span>M+
 						<p>Population en besoin de sang</p>
 					</div>
 				</div>
@@ -116,7 +116,7 @@
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="counter-stat">
 						<i class="icofont-globe"></i>
-						<span class="h3">19</span>M+
+						<span class="h3">4,9</span>M+
 						<p>quantitee non fournie</p>
 					</div>
 				</div>
@@ -168,7 +168,7 @@
 				<div class="service-item mb-4">
 					<div class="icon d-flex align-items-center">
 						<i class="icofont-dna-alt-1 text-lg"></i>
-						<h4 class="mt-3 mb-3">sang rare</h4>
+						<h4 class="mt-3 mb-3">recherches de donneurs</h4>
 					</div>
 					<div class="content">
 						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
@@ -193,11 +193,11 @@
 				<div class="appoinment-wrap mt-5 mt-lg-0">
 					<h2 class="mb-2 title-color">Publier une annonce</h2>
 					<p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
-					     <form id="#" class="appoinment-form" method="post" action="#">
+					     <form id="#" class="appoinment-form" method="post" action="index">
                     <div class="row">
                          <div class="col-lg-6">
                             <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="exampleFormControlSelect1" name="groupe">
                                   <option>Chosissez le groupe sanguin</option>
                                   <option>A-</option>
                                   <option>A+</option>
@@ -221,26 +221,20 @@
                             </div>
                         </div>
 
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input name="location" id="location" type="text" class="form-control" placeholder="Ville">
+                            </div>
+                        </div>
                          <div class="col-lg-6">
                             <div class="form-group">
-                                <input name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                <input name="nom" id="nom" type="text" class="form-control" placeholder="Full Name">
                             </div>
                         </div>
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input name="time" id="time" type="text" class="form-control" placeholder="Time">
-                            </div>
-                        </div>
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="name" id="name" type="text" class="form-control" placeholder="Full Name">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="phone" id="phone" type="Number" class="form-control" placeholder="Phone Number">
+                                <input name="numero" id="numero" type="Number" class="form-control" placeholder="Phone Number">
                             </div>
                         </div>
                     </div>
@@ -248,7 +242,7 @@
                         <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
                     </div>
 
-                    <a class="btn btn-main btn-round-full" href="<?php echo e(URL::to('annonces')); ?>" >publier <i class="icofont-simple-right ml-2  "></i></a>
+                    <a class="btn btn-main btn-round-full" href="<?php echo e(URL::to('dons')); ?>" >publier <i class="icofont-simple-right ml-2  "></i></a>
                 </form>
             </div>
 			</div>

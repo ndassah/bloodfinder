@@ -24,126 +24,145 @@
     
 
     <div class="container c1">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
                 <div class="card">
-                    <div class="card-header text-center bg-danger text-white ">{{ __('Inscription') }}</div>
+                    <div class="row">
+                        <div class="col-lg-5 d-none d-lg-block bg-register-image b3"></div>
+                        <div class="col-lg-7">
+                            <div class="card-header text-center bg-danger text-white ">{{ __('Inscription') }}</div>
     
-                    <div class="card-body">
-                        <form method="POST" action="{{ route('register') }}">
-                            @csrf
-    
-                            <div class="form-group row">
-                                <label for="last_name" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
-    
-                                <div class="col-md-6">
-                                    <input id="last_name" type="text" class="form-control rounded @error('last_name') is-invalid @enderror" name="last_name" value="{{ old('last_name') }}" required autocomplete="last_name">
-    
-                                    @error('last_name')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-    
-                            <div class="form-group row">
-                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Adresse e-mail') }}</label>
-    
-                                <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control rounded @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-    
-                                    @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="matricule" class="col-md-4 col-form-label text-md-right">{{ __('numero immatriculation') }}</label>
-    
-                                <div class="col-md-6">
-                                    <input id="matricule" type="text" class="form-control rounded @error('cni') is-invalid @enderror" name="matricule" value="{{ old('matricule') }}" required autocomplete="matricule">
-    
-                                    @error('matricule')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Mot de passe') }}</label>
-    
-                                <div class="col-md-6">
-                                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-    
-                                    @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-    
-                            <div class="form-group row">
-                                <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Téléphone') }}</label>
-    
-                                <div class="col-md-6">
-                                    <input id="phone" type="tel" class="form-control rounded @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone">
-    
-                                    @error('phone')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-    
-                            <div class="form-group row">
-                                <label for="location" class="col-md-4 col-form-label text-md-right">{{ __('Localité') }}</label>
-                                <div class="col-md-6">
-                                    <input id="location" type="text" class="form-control rounded @error('location') is-invalid @enderror" name="location" value="{{ old('location') }}" required autocomplete="location">
-    
-                                    @error('location')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-
-    
-                            <div class="form-group row mb-0">
-                                <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-danger">
-                                        {{ __('S\'inscrire') }}
-                                    </button>
-                                </div>
-                            </div>
-                           
-                               <div class="row">
-                                <div class="col mb-2">
-                                    <div class="form-check">
-                                        <a class="btn btn-link"  href="{{URL::to('register')}}">
-                                            {{ __('s\'inscrire en tant que particulier') }}
-                                        </a>
+                            <div class="card-body">
+                                <form method="POST" action="{{ route('hopitale.store') }}">
+                                    @csrf
+            
+                                    <div class="form-group row">
+                                        <label for="nom" class="col-md-4 col-form-label text-md-right">{{ __('Nom') }}</label>
+            
+                                        <div class="col-md-6">
+                                            <input  type="text" class="form-control rounded @error('nom') is-invalid @enderror" name="nom" value="{{ old('nom') }}" required autocomplete="nom">
+            
+                                            @error('nom')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col mb-2">
-                                    <div class="form-check">
-                                        <a class="btn btn-link"  href="{{URL::to('login')}}">
-                                            {{ __('j\'ai déjà un compte') }}
-                                        </a>
+            
+                                    <div class="form-group row">
+                                        <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Adresse e-mail') }}</label>
+            
+                                        <div class="col-md-6">
+                                            <input id="email" type="email" class="form-control rounded @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+            
+                                            @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
                                     </div>
-                                </div>
-                               </div>
-                           
-                           
-                        </form>
+                                    <div class="form-group row">
+                                        <label for="matricule" class="col-md-4 col-form-label text-md-right">{{ __('numero immatriculation') }}</label>
+            
+                                        <div class="col-md-6">
+                                            <input id="matricule" type="text" class="form-control rounded @error('matrcule') is-invalid @enderror" name="matricule" value="{{ old('matricule') }}" required autocomplete="matricule">
+            
+                                            @error('matricule')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+        
+                                    <div class="form-group row">
+                                        <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Mot de passe') }}</label>
+            
+                                        <div class="col-md-6">
+                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+            
+                                            @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('confirmation Mot de passe') }}</label>
+            
+                                        <div class="col-md-6">
+                                            <input id="password_confirmation" type="password" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" required autocomplete="password_confirmation">
+            
+                                            @error('password_confirmation')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Téléphone') }}</label>
+            
+                                        <div class="col-md-6">
+                                            <input type="tel" class="form-control rounded @error('numero') is-invalid @enderror" name="numero" value="{{ old('numero') }}" required autocomplete="numero">
+            
+                                            @error('numero')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group row">
+                                        <label for="location" class="col-md-4 col-form-label text-md-right">{{ __('Localité') }}</label>
+                                        <div class="col-md-6">
+                                            <input id="location" type="text" class="form-control rounded @error('location') is-invalid @enderror" name="location" value="{{ old('location') }}" required autocomplete="location">
+            
+                                            @error('location')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+        
+            
+                                    <div class="form-group row mb-0">
+                                        <div class="col-md-6 offset-md-4">
+                                            <button type="submit" class="btn btn-danger">
+                                                {{ __('S\'inscrire') }}
+                                            </button>
+                                        </div>
+                                    </div>
+                                   
+                                       <div class="row">
+                                        <div class="col mb-2">
+                                            <div class="form-check">
+                                                <a class="btn btn-link"  href="{{URL::to('register')}}">
+                                                    {{ __('s\'inscrire en tant que particulier') }}
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col mb-2">
+                                            <div class="form-check">
+                                                <a class="btn btn-link"  href="{{URL::to('login')}}">
+                                                    {{ __('j\'ai déjà un compte') }}
+                                                </a>
+                                            </div>
+                                        </div>
+                                       </div>
+                                   
+                                   
+                                </form>
+                        </div>
+                       
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

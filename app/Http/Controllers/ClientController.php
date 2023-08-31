@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 class ClientController extends Controller
 {
     public function index(){
@@ -30,4 +29,10 @@ class ClientController extends Controller
     public function annonces(){
         return view('client.annonces');
     }
+
+    public function login(){
+        return view('auth.password.login');
+    }
+
+  
 }

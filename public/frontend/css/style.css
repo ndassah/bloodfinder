@@ -458,7 +458,7 @@ a:focus {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("../images/bg/slider-bg-1.jpg") no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url("../images/azure-productions-49uTalO3xa8-unsplash.jpg");
   background-size: cover;
   min-height: 550px;
 }
@@ -845,7 +845,7 @@ a:focus {
 }
 
 .cta-page {
-  background: url("../images/bg/banner.jpg") no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)),url("../images/edouard-tamba-oTrwlvPvpVo-unsplash\ \(1\).jpg") no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1491,7 +1491,18 @@ a:focus {
   margin-top: 15px;
 }
 .b1{
-  background-color: #f1efef;
+  background-color: #152440;
+  height: 100vh;
+}
+.b2{
+  background-image: url("../images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.b3{
+  background-image: url("../images/daniela-santos-W_4pmSwWCkg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .moi{
   font-family: cursive;
@@ -1500,4 +1511,10 @@ a:focus {
   letter-spacing: 3px;
 }
 
+.red{
+  color: red;
+}
+.red2{
+  color: rgb(21, 30, 153);
+}
 /*# sourceMappingURL=maps/style.css.map */
