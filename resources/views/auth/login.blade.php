@@ -81,7 +81,7 @@
                                             </div>
                                             <div class="col-md-6 offset-md-4">
                                                 <div class="form-check">
-                                                    <a class="btn btn-link"  href="{{URL::to('register')}}">
+                                                    <a class="btn btn-link"  href="{{URL::to('inscription')}}">
                                                         {{ __('je n\'ai pas de compte') }}
                                                     </a>
                                                 </div>

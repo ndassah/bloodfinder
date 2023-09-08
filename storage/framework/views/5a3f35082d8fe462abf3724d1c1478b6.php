@@ -241,7 +241,7 @@ unset($__errorArgs, $__bag); ?>
                                        <div class="row">
                                         <div class="col mb-2">
                                             <div class="form-check">
-                                                <a class="btn btn-link"  href="<?php echo e(URL::to('register')); ?>">
+                                                <a class="btn btn-link"  href="<?php echo e(URL::to('inscription')); ?>">
                                                     <?php echo e(__('s\'inscrire en tant que particulier')); ?>
 
                                                 </a>

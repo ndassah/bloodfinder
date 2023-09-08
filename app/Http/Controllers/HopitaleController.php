@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Hopitale;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HopitaleController extends Controller
 {
@@ -17,8 +18,9 @@ class HopitaleController extends Controller
     public function index()
     {
         //
-        $hopitale = Hopitale::all();
-        return view('hopitales.index',compact('hopitales'));
+        $hopitaux = Hopitale::all();
+        return view('dashfinder.dashdemande',compact('hopitaux'));
+       
     }
 
     /**

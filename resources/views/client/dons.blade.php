@@ -1,4 +1,4 @@
-@extends('layout.foot')
+@extends('layout.foot3')
 
 
 @section('contenu')
@@ -13,7 +13,7 @@
           <h1 class="text-capitalize mb-5 text-lg">dons</h1>
 
            <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="{{URL::to('index')}}" class="text-white">Accueil</a></li>
+            <li class="list-inline-item"><a href="{{URL::to('indexDonneurs')}}" class="text-white">Accueil</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
             <li class="list-inline-item"><a href="#" class="text-white-50">dons</a></li>
           </ul>
@@ -26,197 +26,58 @@
 
 <!-- portfolio -->
 <section class="section doctors">
-  <div class="container">
-  	  
-      <div class="col-12 text-center  mb-5">
-	        <div class="btn-group btn-group-toggle " data-toggle="buttons">
-	          <label class="btn active ">
-	            <input type="radio" name="shuffle-filter" value="all" checked="checked" />tout les groupes sanguin
-	          </label>
-	          <label class="btn ">
-	            <input type="radio" name="shuffle-filter" value="cat1" />A+
-	          </label>
-	          <label class="btn">
-	            <input type="radio" name="shuffle-filter" value="cat2" />A-
-	          </label>
-	          <label class="btn">
-	            <input type="radio" name="shuffle-filter" value="cat3" />B+
-	          </label>
-	          <label class="btn">
-	            <input type="radio" name="shuffle-filter" value="cat4" />B-
-	          </label>
-	           <label class="btn">
-	            <input type="radio" name="shuffle-filter" value="cat5" />AB+
-	          </label>
-	          <label class="btn">
-	            <input type="radio" name="shuffle-filter" value="cat6" />AB-
-	          </label>
-			  <label class="btn">
-	            <input type="radio" name="shuffle-filter" value="cat5" />O+
-	          </label>
-	          <label class="btn">
-	            <input type="radio" name="shuffle-filter" value="cat6" />O-
-	          </label>
-	        </div>
-      </div>
-
-    <div class="row shuffle-wrapper portfolio-gallery">
-      	<div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat1&quot;]">
-	      	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-	               <div class="doctor-img">
-	               		<img src="frontend/images/team/1.jpg" alt="doctor-image" class="img-fluid w-100">
-	               </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Thomas Henry</a></h4>
-                	<p>Cardiology</p>
-                </div> 
-	      	</div>
-      	</div>
-
-      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat2&quot;]">
-        	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/2.jpg" alt="doctor-image" class="img-fluid w-100">
-		            </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Harrision Samuel</a></h4>
-                	<p>Radiology</p>
-                </div> 
-	      	</div>
-      </div>
-
-      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat3&quot;]">
-        	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/3.jpg" alt="doctor-image" class="img-fluid w-100">
-		            </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Alexandar James</a></h4>
-                	<p>Dental</p>
-                </div> 
-	      	</div>
-      </div>
-
-      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat4&quot;]">
-        	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/4.jpg" alt="doctor-image" class="img-fluid w-100">
-		            </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Edward john</a></h4>
-                	<p>Pediatry</p>
-                </div> 
-	      	</div>
-      </div>
-
-      	<div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat5&quot;]">
-        	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/1.jpg" alt="doctor-image" class="img-fluid w-100">
-		            </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Thomas Henry</a></h4>
-                	<p>Neurology</p>
-                </div> 
-	      	</div>
-      	</div>
-
-      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat6&quot;]">
-       		 <div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/3.jpg" alt="doctor-image" class="img-fluid w-100">
-		            </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Henry samuel</a></h4>
-                	<p>Palmology</p>
-                </div> 
-	      	</div>
-      </div>
-
-      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat4&quot;]">
-        	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/1.jpg" alt="doctor-image" class="img-fluid w-100">
-		            </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Thomas alexandar</a></h4>
-                	<p>Cardiology</p>
-                </div> 
-	        </div>
-      </div>
-
-      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat3&quot;]">
-        	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/3.jpg" alt="doctor-image" class="img-fluid w-100">
-		             </div>
-	             </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">HarissonThomas </a></h4>
-                	<p>Traumatology</p>
-                </div> 
-	      	</div>
-      </div>
-
-      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item illustration" data-groups="[&quot;cat6&quot;]">
-        	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/4.jpg" alt="doctor-image" class="img-fluid w-100">
-		            </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Jonas Thomson</a></h4>
-                	<p>Cardiology</p>
-                </div> 
-	      	</div>
-        </div>
-
-         <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cat1&quot;]">
-        	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/3.jpg" alt="doctor-image" class="img-fluid w-100">
-		            </div>
-	            </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Henry Forth</a></h4>
-                	<p>hematology</p>
-                </div> 
-	      	</div>
-      </div>
-
-      <div class="col-lg-3 col-sm-6 col-md-6 mb-4 shuffle-item illustration" data-groups="[&quot;cat2&quot;]">
-        	<div class="position-relative doctor-inner-box">
-		        <div class="doctor-profile">
-		        	<div class="doctor-img">
-		               <img src="frontend/images/team/4.jpg" alt="doctor-image" class="img-fluid w-100">
-		             </div>
-	             </div>
-                <div class="content mt-3">
-                	<h4 class="mb-0"><a href="{{URL::to('dons')}}">Thomas Henry</a></h4>
-                	<p>Dental</p>
-                </div> 
-	      	</div>
-        </div>
-    </div>
-  </div>
- 
-</section>
+	<div class="container">
+		<div class="card shadow mb-4">
+			<div class="card-header py-3">
+				<h6 class="m-0 font-weight-bold text-primary">liste des dons</h6>
+			</div>
+			<div class="card-body">
+				<div class="table-responsive">
+					<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+						<thead>
+							<tr>
+								<th>Nom</th>
+								<th>Localité</th> 
+								<th>groupe</th>
+								<th>numero</th>
+								<th>date</th>
+								<th>action</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<th>Nom</th>
+								<th>Localité</th> 
+								<th>groupe</th>
+								<th>numero</th>
+								<th>date</th>
+								<th>action</th>
+							</tr>
+						</tfoot>
+						<tbody>
+							@foreach ($dons as $item)
+							<tr>
+								<td>{{$item->nom}}</td>
+								<td>{{$item->location}}</td>
+								<td>{{$item->groupe}}</td>
+								<td>{{$item->numero}}</td>
+								<td>{{$item->created_at}}</td>
+								<td>								
+									<button class="btn btn-success">Accepter</button>
+								</td>
+							 </tr>
+							@endforeach	
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	  </div>
+	</div>
+   
+  </section>
+  
 
 @endsection

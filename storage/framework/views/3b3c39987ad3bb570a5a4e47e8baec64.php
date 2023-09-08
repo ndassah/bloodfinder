@@ -19,6 +19,8 @@
 
     <!-- Custom styles for this template-->
     <link href="/frontend2/css/sb-admin-2.min.css" rel="stylesheet">
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 
 </head>
 
@@ -83,8 +85,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">gestion des comptes:</h6>
-                        <a class="collapse-item" href="#">comptes de donneurs</a>
-                        <a class="collapse-item" href="#">comptes des hopitaux</a>
+                        <a class="collapse-item" href="<?php echo e(URL::to('donneur')); ?>">comptes de donneurs</a>
+                        <a class="collapse-item" href="<?php echo e(URL::to('hopitale')); ?>">comptes des hopitaux</a>
                     </div>
                 </div>
             </li>
@@ -127,7 +129,7 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo e(URL::to('bloodfinder-admin-data')); ?>">
+                <a class="nav-link" href="<?php echo e(URL::to('liste-data')); ?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>vue d'ensemble</span></a>
             </li>
@@ -408,6 +410,13 @@
 
     <!-- Page level plugins -->
     <script src="/frontend2/vendor/chart.js/Chart.min.js"></script>
+     <!-- Page level plugins -->
+     <script src="/frontend2/vendor/datatables/jquery.dataTables.min.js"></script>
+     <script src="/frontend2/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+ 
+     <!-- Page level custom scripts -->
+     <script src="/frontend2/js/demo/datatables-demo.js"></script>
+ 
 
     <!-- Page level custom scripts -->
     <script src="/frontend2/js/demo/chart-area-demo.js"></script>

@@ -11,7 +11,7 @@
 					
 					<p class="mb-4 pr-5">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
 					<div class="btn-container ">
-						<a href="#annonces"  class="btn btn-main-2 btn-icon btn-round-full">faire une annonce <i class="icofont-simple-right ml-2  "></i></a>
+						<a href="<?php echo e(URL::to('publication')); ?>"  class="btn btn-main-2 btn-icon btn-round-full">faire une annonce <i class="icofont-simple-right ml-2  "></i></a>
 					</div>
 				</div>
 			</div>
@@ -30,7 +30,6 @@
 						<span>24 Heures de service</span>
 						<h4 class="mb-3">Publication d'annonces</h4>
 						<p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem minus, quia ullam quaerat vitae dolorum sit non quam delectus culpa, perferendis soluta consectetur ipsam quae tempore maxime atque vel possimus?</p>
-						<a href="#annonces" class="btn btn-main btn-round-full">annonce</a>
 					</div>
 				
 					<div class="feature-item mb-5 mb-lg-0">
@@ -178,77 +177,7 @@
 		</div>
 	</div>
 </section>
-<section class="section appoinment">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-6 ">
-				<div class="appoinment-content">
-					<img src="frontend/images/national-cancer-institute-PP5nO5gcLdA-unsplash.jpg" alt="" class="img-fluid">
-					<div class="emergency">
-						<h2 class="text-lg"><i class="icofont-phone-circle text-lg"></i>+237 694914695</h2>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-10 " id="annonces">
-				<div class="appoinment-wrap mt-5 mt-lg-0">
-					<h2 class="mb-2 title-color">Publier une annonce</h2>
-					<p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
-					     <form id="#" class="appoinment-form" method="post" action="index">
-                    <div class="row">
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect1" name="groupe">
-                                  <option>Chosissez le groupe sanguin</option>
-                                  <option>A-</option>
-                                  <option>A+</option>
-                                  <option>AB-</option>
-								  <option>AB+</option>
-                                  <option>B-</option>
-                                  <option>B+</option>
-                                  <option>O-</option>
-                                  <option>O+</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <select class="form-control" id="exampleFormControlSelect2">
-                                  <option>Selectionner le type d'annonce</option>
-                                  <option>Offre</option>
-                                  <option>Demande</option>
-                                 
-                                </select>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="location" id="location" type="text" class="form-control" placeholder="Ville">
-                            </div>
-                        </div>
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="nom" id="nom" type="text" class="form-control" placeholder="Full Name">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="numero" id="numero" type="Number" class="form-control" placeholder="Phone Number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group-2 mb-4">
-                        <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
-                    </div>
-
-                    <a class="btn btn-main btn-round-full" href="<?php echo e(URL::to('dons')); ?>" >publier <i class="icofont-simple-right ml-2  "></i></a>
-                </form>
-            </div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layout.foot', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\wamp64\www\bloodfinder\resources\views/Client/index.blade.php ENDPATH**/ ?>

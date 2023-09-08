@@ -110,7 +110,7 @@ unset($__errorArgs, $__bag); ?>
                                             </div>
                                             <div class="col-md-6 offset-md-4">
                                                 <div class="form-check">
-                                                    <a class="btn btn-link"  href="<?php echo e(URL::to('register')); ?>">
+                                                    <a class="btn btn-link"  href="<?php echo e(URL::to('inscription')); ?>">
                                                         <?php echo e(__('je n\'ai pas de compte')); ?>
 
                                                     </a>

@@ -12,7 +12,7 @@
           <h1 class="text-capitalize mb-5 text-lg">Faite le en un clique</h1>
 
           <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="{{URL::to('index')}}" class="text-white">Accueil</a></li>
+            <li class="list-inline-item"><a href="{{URL::to('indexDonneurs')}}" class="text-white">Accueil</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
             <li class="list-inline-item"><a href="#" class="text-white-50">Contactez nous</a></li>
           </ul>

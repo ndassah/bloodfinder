@@ -10,7 +10,7 @@
           <h1 class="text-capitalize mb-5 text-lg">Apropos de nous</h1>
 
           <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="<?php echo e(URL::to('index')); ?>" class="text-white">Accueil</a></li>
+            <li class="list-inline-item"><a href="<?php echo e(URL::to('indexDonneurs')); ?>" class="text-white">Accueil</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
             <li class="list-inline-item"><a href="#" class="text-white-50">Apropos de nous</a></li>
           </ul> 

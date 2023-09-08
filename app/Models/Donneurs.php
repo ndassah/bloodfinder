@@ -4,10 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 
-class Donneurs extends Model
+class Donneurs extends Model implements AuthenticatableContract
 {
-    use HasFactory;
+    use HasFactory, Authenticatable;
+    protected $table='donneurs';
 
     /**
      * The attributes that are mass assignable.
@@ -46,3 +49,13 @@ class Donneurs extends Model
         'password' => 'hashed',
     ];
 }
+
+
+
+
+
+
+
+
+
+

@@ -213,7 +213,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" name="numero" value="<?php echo e(old('numerp')); ?>" required autocomplete="numero">
+unset($__errorArgs, $__bag); ?>" name="numero" value="<?php echo e(old('numero')); ?>" required autocomplete="numero">
             
                                             <?php $__errorArgs = ['numero'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

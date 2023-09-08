@@ -19,7 +19,8 @@
 
     <!-- Custom styles for this template-->
     <link href="/frontend2/css/sb-admin-2.css" rel="stylesheet">
-
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 </head>
 
 <body id="page-top">
@@ -83,8 +84,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">gestion des comptes:</h6>
-                        <a class="collapse-item" href="#">comptes de donneurs</a>
-                        <a class="collapse-item" href="#">comptes des hopitaux</a>
+                        <a class="collapse-item" href="{{URL::to('donneur')}}">comptes de donneurs</a>
+                        <a class="collapse-item" href="{{URL::to('hopitale')}}">comptes des hopitaux</a>
                     </div>
                 </div>
             </li>
@@ -359,10 +360,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-                    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank"
-                            href="https://datatables.net">official DataTables documentation</a>.</p>
+                    
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -375,485 +373,34 @@
                                     <thead>
                                         <tr>
                                             <th>Nom</th>
-                                            <th>Prenom</th>
-                                            <th>Localité</th> 
-                                            <th>sexe</th>
+                                            <th>Localité</th>
                                             <th>numero</th>
+                                            <th>type</th>
                                             <th>Date de creation</th>
-                                            <th>Groupe sanguin</th>
+                                            <th>Date de misa a jour</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Nom</th>
-                                            <th>Prenom</th>
                                             <th>Localité</th> 
-                                            <th>sexe</th>
                                             <th>numero</th>
+                                            <th>type</th>
                                             <th>Date de creation</th>
-                                            <th>Groupe sanguin</th>
+                                            <th>Date de misa a jour</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                        @foreach($data as $item)
                                         <tr>
-                                            <td>mohamed</td>
-                                            <td>tariq</td>
-                                            <td>douala</td>
-                                            <td>homme</td>
-                                            <td>699999999</td>
-                                            <td>2023/04/25</td>
-                                            <td>O+</td>
+                                            <td>{{$item->nom}}</td>
+                                            <td>{{$item->location}}</td>
+                                            <td>{{$item->numero}}</td>
+                                            <td>{{$item->type}}</td>
+                                            <td>{{$item->created_at}}</td>
+                                            <td>{{$item->updated_at}}</td>
                                         </tr>
-                                        <tr>
-                                            <td>hanz</td>
-                                            <td>louise</td>
-                                            <td>yaounde</td>
-                                            <td>homme</td>
-                                            <td>699999999</td>
-                                            <td>2023/04/25</td>
-                                            <td>A+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Boob</td>
-                                            <td>Lil</td>
-                                            <td>douala</td>
-                                            <td>homme</td>
-                                            <td>699999999</td>
-                                            <td>2023/10/25</td>
-                                            <td>A-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>mohamed</td>
-                                            <td>tariq</td>
-                                            <td>douala</td>
-                                            <td>homme</td>
-                                            <td>2023/04/25</td>
-                                            <td>O+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>saliou</td>
-                                            <td>tariq</td>
-                                            <td>douala</td>
-                                            <td>homme</td>
-                                            <td>2023/04/31</td>
-                                            <td>B+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>leila</td>
-                                            <td>akim</td>
-                                            <td>douala</td>
-                                            <td>femme</td>
-                                            <td>2023/04/25</td>
-                                            <td>AB+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td>Sales Assistant</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2012/08/06</td>
-                                            <td>A-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Rhona Davidson</td>
-                                            <td>Integration Specialist</td>
-                                            <td>Tokyo</td>
-                                            <td>Femme</td>
-                                            <td>2010/10/14</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Colleen Hurst</td>
-                                            <td>Javascript</td>
-                                            <td>San Francisco</td>
-                                            <td>Homme</td>
-                                            <td>2009/09/15</td>
-                                            <td>B-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sonya Frost</td>
-                                            <td>Software Engineer</td>
-                                            <td>Edinburgh</td>
-                                            <td>Femme</td>
-                                            <td>2008/12/13</td>
-                                            <td>AB+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jena Gaines</td>
-                                            <td>Office Manager</td>
-                                            <td>London</td>
-                                            <td>Femme</td>
-                                            <td>2008/12/19</td>
-                                            <td>A-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Quinn Flynn</td>
-                                            <td>Support Lead</td>
-                                            <td>Edinburgh</td>
-                                            <td>Homme</td>
-                                            <td>2013/03/03</td>
-                                            <td>O+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Charde Marshall</td>
-                                            <td>Regional Director</td>
-                                            <td>San Francisco</td>
-                                            <td>Homme</td>
-                                            <td>2008/10/16</td>
-                                            <td>O+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Haley Kennedy</td>
-                                            <td>Senior Marketing Designer</td>
-                                            <td>London</td>
-                                            <td>Femme</td>
-                                            <td>2012/12/18</td>
-                                            <td>AB+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tatyana Fitzpatrick</td>
-                                            <td>Regional Director</td>
-                                            <td>London</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/17</td>
-                                            <td>B+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Michael Silva</td>
-                                            <td>Marketing Designer</td>
-                                            <td>London</td>
-                                            <td>Homme</td>
-                                            <td>2012/11/27</td>
-                                            <td>O+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Paul Byrd</td>
-                                            <td>Chief Financial Officer (CFO)</td>
-                                            <td>New York</td>
-                                            <td>Homme</td>
-                                            <td>2010/06/09</td>
-                                            <td>A-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gloria Little</td>
-                                            <td>Systems Administrator</td>
-                                            <td>New York</td>
-                                            <td>Femme</td>
-                                            <td>2009/04/10</td>
-                                            <td>A-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Bradley Greer</td>
-                                            <td>Software Engineer</td>
-                                            <td>London</td>
-                                            <td>Homme</td>
-                                            <td>2012/10/13</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Dai Rios</td>
-                                            <td>Personnel Lead</td>
-                                            <td>Edinburgh</td>
-                                            <td>Homme</td>
-                                            <td>2012/09/26</td>
-                                            <td>O-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jenette Caldwell</td>
-                                            <td>Development Lead</td>
-                                            <td>New York</td>
-                                            <td>Femme</td>
-                                            <td>2011/09/03</td>
-                                            <td>B+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Yuri Berry</td>
-                                            <td>Chief Marketing Officer (CMO)</td>
-                                            <td>New York</td>
-                                            <td>Homme</td>
-                                            <td>2009/06/25</td>
-                                            <td>B+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Caesar Vance</td>
-                                            <td>Pre-Sales Support</td>
-                                            <td>New York</td>
-                                            <td>Homme</td>
-                                            <td>2011/12/12</td>
-                                            <td>O+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Doris Wilder</td>
-                                            <td>Sales Assistant</td>
-                                            <td>Sidney</td>
-                                            <td>Femme</td>
-                                            <td>2010/09/20</td>
-                                            <td>B+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Angelica Ramos</td>
-                                            <td>Chief Executive Officer (CEO)</td>
-                                            <td>London</td>
-                                            <td>Femme</td>
-                                            <td>2009/10/09</td>
-                                            <td>AB+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gavin Joyce</td>
-                                            <td>Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>Homme</td>
-                                            <td>2010/12/22</td>
-                                            <td>B+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jennifer Chang</td>
-                                            <td>Regional Director</td>
-                                            <td>Singapore</td>
-                                            <td>Homme</td>
-                                            <td>2010/11/14</td>
-                                            <td>B-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brenden Wagner</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>Homme</td>
-                                            <td>2011/06/07</td>
-                                            <td>A+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/11</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Shou Itou</td>
-                                            <td>Regional Marketing</td>
-                                            <td>Tokyo</td>
-                                            <td>Homme</td>
-                                            <td>2011/08/14</td>
-                                            <td>A-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/11</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gavin Joyce</td>
-                                            <td>Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>Homme</td>
-                                            <td>2010/12/22</td>
-                                            <td>B+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Angelica Ramos</td>
-                                            <td>Chief Executive Officer (CEO)</td>
-                                            <td>London</td>
-                                            <td>Femme</td>
-                                            <td>2009/10/09</td>
-                                            <td>AB+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jennifer Chang</td>
-                                            <td>Regional Director</td>
-                                            <td>Singapore</td>
-                                            <td>Homme</td>
-                                            <td>2010/11/14</td>
-                                            <td>B-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Gavin Joyce</td>
-                                            <td>Developer</td>
-                                            <td>Edinburgh</td>
-                                            <td>Homme</td>
-                                            <td>2010/12/22</td>
-                                            <td>B+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jennifer Chang</td>
-                                            <td>Regional Director</td>
-                                            <td>Singapore</td>
-                                            <td>Homme</td>
-                                            <td>2010/11/14</td>
-                                            <td>B-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Angelica Ramos</td>
-                                            <td>Chief Executive Officer (CEO)</td>
-                                            <td>London</td>
-                                            <td>Femme</td>
-                                            <td>2009/10/09</td>
-                                            <td>AB+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/11</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/11</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Shou Itou</td>
-                                            <td>Regional Marketing</td>
-                                            <td>Tokyo</td>
-                                            <td>Homme</td>
-                                            <td>2011/08/14</td>
-                                            <td>A-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brenden Wagner</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>Homme</td>
-                                            <td>2011/06/07</td>
-                                            <td>A+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Shou Itou</td>
-                                            <td>Regional Marketing</td>
-                                            <td>Tokyo</td>
-                                            <td>Homme</td>
-                                            <td>2011/08/14</td>
-                                            <td>A-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/11</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brenden Wagner</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>Homme</td>
-                                            <td>2011/06/07</td>
-                                            <td>A+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jennifer Chang</td>
-                                            <td>Regional Director</td>
-                                            <td>Singapore</td>
-                                            <td>Homme</td>
-                                            <td>2010/11/14</td>
-                                            <td>B-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/11</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jennifer Chang</td>
-                                            <td>Regional Director</td>
-                                            <td>Singapore</td>
-                                            <td>Homme</td>
-                                            <td>2010/11/14</td>
-                                            <td>B-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/11</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brenden Wagner</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>Homme</td>
-                                            <td>2011/06/07</td>
-                                            <td>A+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/11</td>
-                                            <td>AB-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Angelica Ramos</td>
-                                            <td>Chief Executive Officer (CEO)</td>
-                                            <td>London</td>
-                                            <td>Femme</td>
-                                            <td>2009/10/09</td>
-                                            <td>AB+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Jennifer Chang</td>
-                                            <td>Regional Director</td>
-                                            <td>Singapore</td>
-                                            <td>Homme</td>
-                                            <td>2010/11/14</td>
-                                            <td>B-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Angelica Ramos</td>
-                                            <td>Chief Executive Officer (CEO)</td>
-                                            <td>London</td>
-                                            <td>Femme</td>
-                                            <td>2009/10/09</td>
-                                            <td>AB+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brenden Wagner</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>Homme</td>
-                                            <td>2011/06/07</td>
-                                            <td>A+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brenden Wagner</td>
-                                            <td>Software Engineer</td>
-                                            <td>San Francisco</td>
-                                            <td>Homme</td>
-                                            <td>2011/06/07</td>
-                                            <td>A+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Angelica Ramos</td>
-                                            <td>Chief Executive Officer (CEO)</td>
-                                            <td>London</td>
-                                            <td>Femme</td>
-                                            <td>2009/10/09</td>
-                                            <td>AB+</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Fiona Green</td>
-                                            <td>Chief Operating Officer (COO)</td>
-                                            <td>San Francisco</td>
-                                            <td>Femme</td>
-                                            <td>2010/03/11</td>
-                                            <td>AB-</td>
-                                        </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

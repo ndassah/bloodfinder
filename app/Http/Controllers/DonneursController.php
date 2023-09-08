@@ -17,8 +17,8 @@ class DonneursController extends Controller
     public function index()
     {
         //
-        $donneur = Donneurs::all();
-        return view ('donneurs.index',compact('donneurs'));
+        $donneurs = Donneurs::all();
+        return view ('dashfinder.dashdons',compact('donneurs'));
     }
 
     /**
@@ -128,6 +128,11 @@ class DonneursController extends Controller
 
         return redirect()->route('index')->with('success','utilisateur mise a jour');
 
+    }
+
+    public function nombreDonneurs(){
+        $nombre = Donneurs::count();
+        return view('dashfinder.index',compact('nombre'));
     }
 
     

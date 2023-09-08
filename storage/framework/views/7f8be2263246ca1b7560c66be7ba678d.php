@@ -11,7 +11,7 @@
           <h1 class="text-capitalize mb-5 text-lg">Ce que nous faisons</h1>
 
         <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="<?php echo e(URL::to('index')); ?>" class="text-white">Accueil</a></li>
+            <li class="list-inline-item"><a href="<?php echo e(URL::to('indexDonneurs')); ?>" class="text-white">Accueil</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
             <li class="list-inline-item"><a href="#" class="text-white-50">Our services</a></li>
           </ul>
@@ -63,7 +63,7 @@
 				<div class="cta-content">
 					<div class="divider mb-4"></div>
 					<h2 class="mb-5 text-lg red">Nous sommes heureux de vous offrir la possibilitée <span class=" red2">d'avoir une bonne santé</span></h2>
-					<a href="<?php echo e(URL::to('demande')); ?>" class="btn btn-main-2 btn-round-full">faire une demande<i class="icofont-simple-right  ml-2"></i></a>
+					<a href="<?php echo e(URL::to('publication')); ?>" class="btn btn-main-2 btn-round-full">faire un dons<i class="icofont-simple-right  ml-2"></i></a>
 				</div>
 			</div>
 		</div>

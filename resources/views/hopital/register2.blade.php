@@ -142,7 +142,7 @@
                                        <div class="row">
                                         <div class="col mb-2">
                                             <div class="form-check">
-                                                <a class="btn btn-link"  href="{{URL::to('register')}}">
+                                                <a class="btn btn-link"  href="{{URL::to('inscription')}}">
                                                     {{ __('s\'inscrire en tant que particulier') }}
                                                 </a>
                                             </div>

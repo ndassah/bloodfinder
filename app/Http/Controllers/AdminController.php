@@ -29,7 +29,23 @@ class AdminController extends Controller
     {
         return view('dashfinder.blank');
     }
+    public function dashdons()
+    {
+        return view('dashfinder.dashdons');
+    }
+    public function dashdemande()
+    {
+        return view('dashfinder.dashdemande');
+    }
 
+    public function getAllData(){
+        $donneurs = Donneurs::all();
+        $hopitale = Hopitale::all();
+
+        $data = $donneurs->concat($hopitale);
+
+        return view('dashfinder.tables',compact('data'));
+    }
     // Ajoutez ici les méthodes pour les autres fonctionnalités du dashboard
 
     

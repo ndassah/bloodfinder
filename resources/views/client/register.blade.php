@@ -122,7 +122,7 @@
                                         <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Téléphone') }}</label>
             
                                         <div class="col-md-6">
-                                            <input  type="tel" class="form-control rounded @error('numero') is-invalid @enderror" name="numero" value="{{ old('numerp') }}" required autocomplete="numero">
+                                            <input  type="tel" class="form-control rounded @error('numero') is-invalid @enderror" name="numero" value="{{ old('numero') }}" required autocomplete="numero">
             
                                             @error('numero')
                                                 <span class="invalid-feedback" role="alert">

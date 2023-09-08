@@ -20,7 +20,6 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="frontend/css/style.css">
-
 </head>
 
 <body id="top">
@@ -48,7 +47,7 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navigation" id="navbar">
 		<div class="container">
-		 	 <a class="navbar-brand" href="<?php echo e(URL::to('index')); ?>">
+		 	 <a class="navbar-brand" href="<?php echo e(URL::to('indexDonneurs')); ?>">
 				<p class="moi">Bloodfinder</p>
 			  </a>
 
@@ -59,15 +58,11 @@
 		  <div class="collapse navbar-collapse" id="navbarmain">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" href="<?php echo e(URL::to('index')); ?>">Accueil</a>
+				<a class="nav-link" href="<?php echo e(URL::to('indexDonneurs')); ?>">Accueil</a>
 			  </li>
 			   <li class="nav-item"><a class="nav-link" href="<?php echo e(URL::to('about')); ?>">Apropos</a></li>
-			  	<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Annonces <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown03">
-						<li><a class="dropdown-item" href="<?php echo e(URL::to('dons')); ?>">Dons</a></li>
-						<li><a class="dropdown-item" href="<?php echo e(URL::to('demandes')); ?>">Demandes</a></li>
-					</ul>
+			  	<li class="nav-item">
+					<a class="nav-link" href="<?php echo e(URL::to('showdemandes')); ?>">voir les demandes</a>
 			  	</li>
 			   <li class="nav-item"><a class="nav-link" href="<?php echo e(URL::to('contact')); ?>" class="--primary">Contact</a></li>
 			   <li class="nav-item"><a href="<?php echo e(URL::to('login')); ?>" class="btn btn-main btn-round-full">Logout</a></li>

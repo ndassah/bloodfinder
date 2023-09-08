@@ -16,6 +16,7 @@ return new class extends Migration
             $table->enum('type',['demande','dons']);
             $table->enum('groupe',['A+','A-','B+','B-','AB+','AB-','O+','O-']);
             $table->string('location',100);
+            $table->string('nom',100);
             $table->string('numero',20);
             $table->string('message',100);
             $table->timestamps();
