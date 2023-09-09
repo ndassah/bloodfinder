@@ -68,6 +68,18 @@
                                                 @enderror
                                             </div>
                                         </div>
+                                        <div class="row mb-3">
+                                            <label for="type" class="col-md-4 col-form-label text-md-end">{{ __('type de compte') }}</label>
+                                            <select name="type" id="type">
+                                                <option value="donneur">Donneur</option>
+                                                <option value="hopital">Hopital</option>
+                                            </select>
+                                            @error('type')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                            @enderror
+                                        </div>
                 
                                         <div class="form-group row">
                                             <div class="col-md-6 offset-md-4">

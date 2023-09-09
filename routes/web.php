@@ -26,7 +26,7 @@ Route::get('/', function () {
 
 //Routes des donneurs
 
-//Route::middleware(['auth','check.user.type'])->group(function(){
+Route::middleware(['auth:donneur'])->group(function(){
 
         Route::get('/indexDonneurs',[App\Http\Controllers\ClientController::class,'index']);
         Route::get('/contact',[App\Http\Controllers\ClientController::class,'contact']);
@@ -36,11 +36,11 @@ Route::get('/', function () {
         Route::get('/showdemandes',[App\Http\Controllers\ClientController::class,'showdemandes']);
         Route::get('/demandes',[App\Http\Controllers\ClientController::class,'demandes']);
 
-//});
+});
 
 
 //Routes des hopitaux
-//Route::middleware(['auth','check.user.type'])->group(function(){
+Route::middleware(['auth:hopital'])->group(function(){
         Route::get('/indexHopitaux',[App\Http\Controllers\ClientController::class,'index3']);
         Route::get('/contact2',[App\Http\Controllers\ClientController::class,'contact2']);
         Route::get('/about2',[App\Http\Controllers\ClientController::class,'about2']);
@@ -48,7 +48,7 @@ Route::get('/', function () {
         Route::get('/publication2',[App\Http\Controllers\ClientController::class,'publication2']);
         Route::get('/showdons',[App\Http\Controllers\ClientController::class,'showdons']);
         Route::get('/dons',[App\Http\Controllers\ClientController::class,'dons']);
-//});
+});
 
 
 
@@ -77,15 +77,10 @@ Route::get('/dashdemande',[App\Http\Controllers\AdminController::class,'dashdema
 
 
 
-Route::get('/login',[App\Http\Controllers\Auth\AuthController::class,'login'])->name('login');
-Route::post('/login',[App\Http\Controllers\Auth\AuthController::class,'dologin'])->middleware('CheckUserType');
+Route::get('/login',[App\Http\Controllers\Auth\LoginController::class,'dologin'])->name('login');
+Route::post('/login',[App\Http\Controllers\Auth\LoginController::class,'login']);
 
 Route::get('/liste-data',[App\Http\Controllers\AdminController::class,'getAllData']);
-
-Auth::routes();
-
-
-
 
 Auth::routes();
 

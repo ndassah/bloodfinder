@@ -5,18 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Authenticatable;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 
 class Donneurs extends Model implements AuthenticatableContract
 {
     use HasFactory, Authenticatable;
-    protected $table='donneurs';
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
+    protected $guard='donneur';
     protected $fillable = [
         'nom',
         'prenom',
@@ -26,6 +27,7 @@ class Donneurs extends Model implements AuthenticatableContract
         'numero',
         'cni',
         'email',
+        'type',
         'password',
     ];
 
@@ -48,6 +50,10 @@ class Donneurs extends Model implements AuthenticatableContract
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function isDonneur(){
+        return $this->type === 'donneur';
+    }
 }
 
 

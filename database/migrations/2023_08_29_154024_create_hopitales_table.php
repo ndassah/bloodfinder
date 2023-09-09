@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom',100);
             $table->string('numero',20);
-            $table->string('type')->default('hopitale');
+            $table->string('type')->default('hopital');
             $table->string('location',100);
             $table->string('email',191)->unique();
             $table->string('matricule',20);

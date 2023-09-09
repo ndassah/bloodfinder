@@ -5,24 +5,26 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Authenticatable;
+use Illuminate\Foundation\Auth\User;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 
 class Hopitale extends Model implements AuthenticatableContract
 {
     use HasFactory, Authenticatable;
 
-    protected $table='hopitales';
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
+    protected $guard='hopital';
     protected $fillable = [
         'nom',
         'location',
         'numero',
         'matricule',
         'email',
+        'type',
         'password',
     ];
 
@@ -45,4 +47,7 @@ class Hopitale extends Model implements AuthenticatableContract
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function isHopital(){
+        return $this->type === 'hopital';
+    }
 }
