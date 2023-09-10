@@ -10,7 +10,7 @@
           <h1 class="text-capitalize mb-5 text-lg">dons</h1>
 
            <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="<?php echo e(URL::to('indexDonneurs')); ?>" class="text-white">Accueil</a></li>
+            <li class="list-inline-item"><a href="<?php echo e(URL::to('indexHopitaux')); ?>" class="text-white">Accueil</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
             <li class="list-inline-item"><a href="#" class="text-white-50">dons</a></li>
           </ul>
