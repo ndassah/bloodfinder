@@ -65,8 +65,10 @@
 								<td>{{$item->groupe}}</td>
 								<td>{{$item->numero}}</td>
 								<td>{{$item->created_at}}</td>
-								<td>								
-									<button class="btn btn-success">Accepter</button>
+								<td>		
+									<a href="tel: {{$item->numero}} ">
+										<button class="btn btn-success">Accepter</button>
+									</a>						
 								</td>
 							 </tr>
 							@endforeach

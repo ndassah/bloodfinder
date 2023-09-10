@@ -60,7 +60,9 @@
 								<td><?php echo e($item->numero); ?></td>
 								<td><?php echo e($item->created_at); ?></td>
 								<td>								
-									<button class="btn btn-success">Accepter</button>
+									<a href="tel: <?php echo e($item->numero); ?> ">
+										<button class="btn btn-success">Accepter</button>
+									</a>
 								</td>
 							 </tr>
 							<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>	
