@@ -69,8 +69,12 @@ Route::resource('hopitale', HopitaleController::class)
         
 Route::get('/bloodfinder-admin',[App\Http\Controllers\AdminController::class,'dash']);
 Route::get('/bloodfinder-404',[App\Http\Controllers\AdminController::class,'t404']);
+Route::get('/bloodfinder-admin-show-dons',[App\Http\Controllers\AdminController::class,'dashshowdons']);
+Route::get('/bloodfinder-admin-show-demandes',[App\Http\Controllers\AdminController::class,'dashshowdemandes']);
+Route::get('/bloodfinder-showdons2',[App\Http\Controllers\AdminController::class,'showdons2']);
+Route::get('/bloodfinder-showdemandes2',[App\Http\Controllers\AdminController::class,'showdemandes2']);
+
 Route::get('/bloodfinder-admin-data',[App\Http\Controllers\AdminController::class,'tables']);
-Route::get('/bloodfinder-admin-stat',[App\Http\Controllers\AdminController::class,'stat']);
 Route::get('/bloodfinder-admin-empty',[App\Http\Controllers\AdminController::class,'blank']);
 Route::get('/dashdons',[App\Http\Controllers\AdminController::class,'dashdons']);
 Route::get('/dashdemande',[App\Http\Controllers\AdminController::class,'dashdemande']);

@@ -14,6 +14,14 @@ class AdminController extends Controller
     {
         return view ('dashfinder.index');
     }
+    public function dashshowdons()
+    {
+        return view ('dashfinder.showdons');
+    }
+    public function dashshowdemandes()
+    {
+        return view ('dashfinder.showdemandes');
+    }
     public function t404()
     {
         return view('dashfinder.404');
@@ -22,10 +30,7 @@ class AdminController extends Controller
     {
         return view('dashfinder.tables');
     }
-    public function stat()
-    {
-        return view('dashfinder.charts');
-    }
+   
     public function blank()
     {
         return view('dashfinder.blank');
@@ -59,6 +64,16 @@ class AdminController extends Controller
     }
     // Ajoutez ici les méthodes pour les autres fonctionnalités du dashboard
 
+    public function showdemandes2(){
+        $demande = Annonces::where('type','demande')->get();
+
+        return view('dashfinder.showdemandes',['demande'=>$demande]);
+    }
+    public function showdons2(){
+        $dons = Annonces::where('type','dons')->get();
+
+        return view('dashfinder.showdons',['dons'=>$dons]);
+    }
     
 }
 
