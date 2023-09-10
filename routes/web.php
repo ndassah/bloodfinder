@@ -81,6 +81,7 @@ Route::get('/login',[App\Http\Controllers\Auth\LoginController::class,'dologin']
 Route::post('/login',[App\Http\Controllers\Auth\LoginController::class,'login']);
 
 Route::get('/liste-data',[App\Http\Controllers\AdminController::class,'getAllData']);
+Route::get('/compte',[App\Http\Controllers\AdminController::class,'compte']);
 
 Auth::routes();
 

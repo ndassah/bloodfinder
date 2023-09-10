@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Donneurs;
+use App\Models\Annonces;
 use App\Models\Hopitale;
 
 class AdminController extends Controller
@@ -45,6 +46,16 @@ class AdminController extends Controller
         $data = $donneurs->concat($hopitale);
 
         return view('dashfinder.tables',compact('data'));
+    }
+
+    public function compte(){
+        $donneurs = Donneurs::count();
+        $hopital = Hopitale::count();
+        $annonce = Annonces::count();
+
+        $total = $donneurs + $hopital;
+        
+        return view('dashfinder.index',['total'=>$total,'donneurs'=>$donneurs,'hopital'=>$hopital,'annonce'=>$annonce]);
     }
     // Ajoutez ici les méthodes pour les autres fonctionnalités du dashboard
 
