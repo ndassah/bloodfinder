@@ -28,14 +28,14 @@
                 <div class="contact-block mb-4 mb-lg-0">
                     <i class="icofont-live-support"></i>
                     <h5>Contactez nous</h5>
-                     +237694914695
+                     <a href="tel:+237694914695">+237694914695</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="contact-block mb-4 mb-lg-0">
                     <i class="icofont-support-faq"></i>
                     <h5>Email</h5>
-                     mohamedtariq150@mail.com
+                    <a href="mailto:mohamedtariq150@mail.com">mohamedtariq150@mail.com</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6">
@@ -56,56 +56,11 @@
                 <div class="section-title text-center">
                     <h2 class="text-md mb-2">Contactez nous</h2>
                     <div class="divider mx-auto my-4"></div>
-                    <p class="mb-5">Laboriosam exercitationem molestias beatae eos pariatur, similique, excepturi mollitia sit perferendis maiores ratione aliquam?</p>
+                    <p class="mb-5">en cas de probleme contactez nous par email</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <form id="contact-form" class="contact__form " method="post" action="mail.php">
-                 <!-- form message -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                message envoyé.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="name" id="name" type="text" class="form-control" placeholder="votre nom complet" >
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="email" id="email" type="email" class="form-control" placeholder="votre email">
-                            </div>
-                        </div>
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="subject" id="subject" type="text" class="form-control" placeholder="Your Query Topic">
-                            </div>
-                        </div>
-                         <div class="col-lg-6">
-                            <div class="form-group">
-                                <input name="phone" id="phone" type="text" class="form-control" placeholder="votre numero ">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group-2 mb-4">
-                        <textarea name="message" id="message" class="form-control" rows="8" placeholder="votre message"></textarea>
-                    </div>
-
-                    <div class="text-center">
-                        <input class="btn btn-main btn-round-full" name="submit" type="submit" value="envoyer">
-                    </div>
-                </form>
-            </div>
-        </div>
+       
     </div>
 </section>
 

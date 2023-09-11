@@ -29,7 +29,7 @@
 				<h2 class="title-color">les personnes au tours de vous prennent soin de vous</h2>
 			</div>
 			<div class="col-lg-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quod laborum alias. Vitae dolorum, officia sit! Saepe ullam facere at, consequatur incidunt, quae esse, quis ut reprehenderit dignissimos, libero delectus.</p>
+				<p>grace a vous, nous pouvons sauver des vies.</p>
 				<img src="frontend/images/banner2.jpg" alt="" class="img-fluid">
 			</div>
 		</div>
@@ -43,28 +43,28 @@
 				<div class="about-block-item mb-5 mb-lg-0">
 					<img src="frontend/images/emmanuel-ikwuegbu-ZsObS42_i_0-unsplash.jpg" alt="" class="img-fluid w-100">
 					<h4 class="mt-3">Aide des enfants drepanocytaires</h4>
-					<p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
+					<p>Venir en aide aux enfants souffrant de maladies rares .</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="about-block-item mb-5 mb-lg-0">
 					<img src="frontend/images/edouard-tamba-HV_TYd3KAQA-unsplash.jpg" alt="" class="img-fluid w-100">
 					<h4 class="mt-3">Aide à la population camerounaise</h4>
-					<p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
+					<p>Equilibrer l'offre et la demande de dons de sang dans le territoire nationale .</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="about-block-item mb-5 mb-lg-0">
 					<img src="frontend/images/edouard-tamba-bZnciM7XIYw-unsplash.jpg" alt="" class="img-fluid w-100">
 					<h4 class="mt-3">reduction du taux de mortalite</h4>
-					<p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
+					<p>Reduire le taux de mortalite due à l'abscence de dons de sang .</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="about-block-item">
 					<img src="frontend/images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg" alt="" class="img-fluid w-100">
 					<h4 class="mt-3">Aide du service médicale</h4>
-					<p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
+					<p>Venir en aide aux services médicaux grace à nous différents donneurs .</p>
 				</div>
 			</div>
 		</div>
@@ -86,10 +86,10 @@
 				<div class="testimonial-block">
 					<div class="client-info ">
 						<h4>Amazing service!</h4>
-						<span>John Partho</span>
+						<span>John Kamga</span>
 					</div>
 					<p>
-						They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+						merci pour tout
 					</p>
 					<i class="icofont-quote-right"></i>
 					
@@ -97,11 +97,11 @@
 
 				<div class="testimonial-block">
 					<div class="client-info">
-						<h4>Expert doctors!</h4>
-						<span>Mullar Sarth</span>
+						<h4>merci beaucoup</h4>
+						<span>Mullar Muna</span>
 					</div>
 					<p>
-						They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+						ils fournices un service tres rapide
 					</p>
 					<i class="icofont-quote-right"></i>
 				</div>
@@ -112,7 +112,7 @@
 						<span>Kolis Mullar</span>
 					</div>
 					<p>
-						They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+						je suis fier de mon pays
 					</p>
 					<i class="icofont-quote-right"></i>
 				</div>
@@ -120,7 +120,7 @@
 				<div class="testimonial-block">
 					<div class="client-info">
 						<h4>Nice Environment!</h4>
-						<span>Partho Sarothi</span>
+						<span>Agarha Sarothi</span>
 					</div>
 					<p>
 						They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
@@ -142,5 +142,6 @@
 		</div>
 	</div>
 </section>
+
 
 @endsection

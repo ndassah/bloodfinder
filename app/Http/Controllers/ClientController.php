@@ -7,7 +7,10 @@ use Illuminate\Http\Request;
 class ClientController extends Controller
 {
     public function index(){
-        return view('client.index');
+        return view ('client.index');
+    } 
+    public function index0(){
+        return view('client.index0');
     } 
     public function index3(){
         return view('client.index3');

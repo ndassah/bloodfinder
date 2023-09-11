@@ -9,10 +9,10 @@
 					<span class="text-uppercase text-sm letter-spacing ">solution sanitaire</span>
 					<h1 class="mb-3 mt-3">Votre partenaire sanitaire de confiance</h1>
 					
-					<p class="mb-4 pr-5">A repudiandae ipsam labore ipsa voluptatum quidem quae laudantium quisquam aperiam maiores sunt fugit, deserunt rem suscipit placeat.</p>
-					<div class="btn-container ">
+					<p class="mb-4 pr-5">faire des dons de sang pour venir en aide aux hopitaux.</p>
+					<!--<div class="btn-container ">
 						<a href="<?php echo e(URL::to('publication')); ?>"  class="btn btn-main-2 btn-icon btn-round-full">faire un dons<i class="icofont-simple-right ml-2  "></i></a>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 						</div>
 						<span>24 Heures de service</span>
 						<h4 class="mb-3">Publication d'annonces</h4>
-						<p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem minus, quia ullam quaerat vitae dolorum sit non quam delectus culpa, perferendis soluta consectetur ipsam quae tempore maxime atque vel possimus?</p>
+						<p class="mb-4">vous pouvez publier des annonces sur bloodfinder quelque soit votre localitée</p>
 					</div>
 				
 					<div class="feature-item mb-5 mb-lg-0">
@@ -52,7 +52,7 @@
 						</div>
 						<span>Cas urgent</span>
 						<h4 class="mb-3">119</h4>
-						<p>optenez toute l'aide nécessaire en cas d'urgence. Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+						<p>optenez toute l'aide nécessaire en cas d'urgence. notre service d'urgence vous repondra. </p>
 					</div>
 				</div>
 			</div>
@@ -130,7 +130,7 @@
 				<div class="section-title">
 					<h2>Nos objectifs</h2>
 					<div class="divider mx-auto my-4"></div>
-					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+					<p>Nous avons des objectifs tres claire à atteindre et espérons les atteindre grace à vous.</p>
 				</div>
 			</div>
 		</div>
@@ -145,7 +145,7 @@
 						<h4 class="mt-3 mb-3">aides</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Venir en aide aux famille grace aux dons de sang.</p>
 					</div>
 				</div>
 			</div>
@@ -158,7 +158,7 @@
 					</div>
 
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">faciliter les dons de sang aux malade dans toutes les regions.</p>
 					</div>
 				</div>
 			</div>
@@ -170,7 +170,7 @@
 						<h4 class="mt-3 mb-3">recherches de donneurs</h4>
 					</div>
 					<div class="content">
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">rechercher les donneurs dans l'ensemble du territoire nationale.</p>
 					</div>
 				</div>
 			</div>

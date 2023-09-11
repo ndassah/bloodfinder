@@ -94,7 +94,7 @@
 					<div class="logo mb-4">
 						<p class="moi">Bloodfinder</p>
 					</div>
-					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
+					<p>Votre plateforme de recherche des donneurs de sang pres de votre localitée.</p>
 
 					<ul class="list-inline footer-socials mt-4">
 						<li class="list-inline-item"><a href="https://www.facebook.com/iai-cameroun"><i class="icofont-facebook"></i></a></li>

@@ -15,7 +15,7 @@
         <ul class="list-inline breadcumb-nav">
             <li class="list-inline-item"><a href="{{URL::to('indexHopitaux')}}" class="text-white">Accueil</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">Our services</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">Nos services</a></li>
           </ul>
         </div>
       </div>
@@ -33,7 +33,7 @@
 					<img src="frontend/images/azure-productions-49uTalO3xa8-unsplash.jpg" alt="" class="img-fluid">
 					<div class="content">
 						<h4 class="mt-4 mb-2 title-color">Dons de sang</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">faciliter les dons de sang aux malade dans toutes les regions</p>
 					</div>
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 					<img src="frontend/images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg" alt="" class="img-fluid">
 					<div class="content">
 						<h4 class="mt-4 mb-2 title-color">Recherche de donneurs</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">rechercher les donneurs dans l'ensemble du territoire nationale.</p>
 					</div>
 				</div>
 			</div>
@@ -51,7 +51,7 @@
 					<img src="frontend/images/nguy-n-hi-p-maYeMl3xCrY-unsplash.jpg" alt="" class="img-fluid">
 					<div class="content">
 						<h4 class="mt-4 mb-2 title-color">Demande de dons de sang</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">permettre aux hopitaux de faire des demandes de dons de sang.</p>
 					</div>
 				</div>
 			</div>

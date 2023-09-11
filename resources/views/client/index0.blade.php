@@ -1,4 +1,4 @@
-@extends('layout.foot3')
+@extends('layout.foot0')
 
 @section('contenu')
 <!-- Slider Start -->
@@ -11,9 +11,9 @@
 					<span class="text-uppercase text-sm letter-spacing ">solution sanitaire</span>
 					<h1 class="mb-3 mt-3">Votre partenaire sanitaire de confiance</h1>
 					
-					<p class="mb-4 pr-5">faire des demandes de sang pres des donneurs pour sauver des vies.</p>
+					<p class="mb-4 pr-5">faire des dons de sang pour venir en aide aux hopitaux.</p>
 					<!--<div class="btn-container ">
-						<a href="{{URL::to('publication2')}}"  class="btn btn-main-2 btn-icon btn-round-full">faire une demande<i class="icofont-simple-right ml-2  "></i></a>
+						<a href="{{URL::to('publication')}}"  class="btn btn-main-2 btn-icon btn-round-full">faire un dons<i class="icofont-simple-right ml-2  "></i></a>
 					</div>-->
 				</div>
 			</div>
@@ -82,7 +82,6 @@
 					<h2 class="title-color">Dons de sang <br>& recherches de donneurs</h2>
 					<p class="mt-4 mb-5">nous proposons le meilleur Services de recherches, d'offre et de demande de dons de sang au Cameroun. </p>
 
-					<a href="{{URL::to('service2')}}" class="btn btn-main-2 btn-round-full btn-icon">Services<i class="icofont-simple-right ml-3"></i></a>
 				</div>
 			</div>
 		</div>

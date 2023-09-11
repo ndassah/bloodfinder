@@ -47,8 +47,8 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navigation" id="navbar">
 		<div class="container">
-		 	 <a class="navbar-brand" href="{{URL::to('indexDonneurs')}}">
-				<p class="moi">Bloodfinder <br> <span style="font-size: 16px">donneurs</span></p>
+		 	 <a class="navbar-brand" href="{{URL::to('home')}}">
+				<p class="moi">Bloodfinder</p>
 			  </a>
 
 		  	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,22 +58,11 @@
 		  <div class="collapse navbar-collapse" id="navbarmain">
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" href="{{URL::to('indexDonneurs')}}">Accueil</a>
+				<a class="nav-link" href="{{URL::to('home')}}">Accueil</a>
 			  </li>
-			   <li class="nav-item"><a class="nav-link" href="{{URL::to('about')}}">Apropos</a></li>		  
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Annonces <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown03">
-						<li class="nav-item">
-							<a class="nav-link" href="{{URL::to('showdemandes')}}">voir les demandes</a>
-						</li>
-						<li class="nav-item">
-							<a href="{{URL::to('publication')}}"  class="nav-link">faire un dons</a>
-						</li>
-					</ul>
-			  	</li>
-			   <li class="nav-item"><a class="nav-link" href="{{URL::to('contact')}}" class="--primary">Contact</a></li>
-			   <li class="nav-item"><a href="{{URL::to('login')}}" class="btn btn-main btn-round-full">Logout</a></li>
+			  <li class="nav-item"><a class="nav-link" href="{{URL::to('inscription')}}" class="--primary">Inscription</a></li>
+			  <li class="nav-item"><a class="nav-link" href="{{URL::to('login')}}" class="--primary">login</a></li>
+
 			</ul>
 		  </div>
 		</div>

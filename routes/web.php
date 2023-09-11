@@ -20,7 +20,7 @@ use App\Http\Controllers\Auth\RegisterController;
 */
 
 Route::get('/', function () {
-    return view('Client.index');
+    return view('Client.index0');
 });
 
 
@@ -89,4 +89,4 @@ Route::get('/compte',[App\Http\Controllers\AdminController::class,'compte']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\ClientController::class, 'index0'])->name('index0');
