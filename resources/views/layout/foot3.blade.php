@@ -48,7 +48,7 @@
 	<nav class="navbar navbar-expand-lg navigation" id="navbar">
 		<div class="container">
 		 	 <a class="navbar-brand" href="{{URL::to('indexHopitaux')}}">
-				<p class="moi">Bloodfinder</p>
+				<p class="moi">Bloodfinder <br> <span style="font-size: 16px">hopitaux</span></p>
 			  </a>
 
 		  	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
