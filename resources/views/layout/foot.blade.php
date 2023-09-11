@@ -60,9 +60,17 @@
 			  <li class="nav-item active">
 				<a class="nav-link" href="{{URL::to('indexDonneurs')}}">Accueil</a>
 			  </li>
-			   <li class="nav-item"><a class="nav-link" href="{{URL::to('about')}}">Apropos</a></li>
-			  	<li class="nav-item">
-					<a class="nav-link" href="{{URL::to('showdemandes')}}">voir les demandes</a>
+			   <li class="nav-item"><a class="nav-link" href="{{URL::to('about')}}">Apropos</a></li>		  
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Annonces <i class="icofont-thin-down"></i></a>
+					<ul class="dropdown-menu" aria-labelledby="dropdown03">
+						<li class="nav-item">
+							<a class="nav-link" href="{{URL::to('showdemandes')}}">voir les demandes</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{URL::to('publication')}}"  class="nav-link">faire un dons</a>
+						</li>
+					</ul>
 			  	</li>
 			   <li class="nav-item"><a class="nav-link" href="{{URL::to('contact')}}" class="--primary">Contact</a></li>
 			   <li class="nav-item"><a href="{{URL::to('login')}}" class="btn btn-main btn-round-full">Logout</a></li>

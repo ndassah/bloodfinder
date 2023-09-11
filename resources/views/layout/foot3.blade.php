@@ -61,9 +61,17 @@
 				<a class="nav-link" href="{{URL::to('indexHopitaux')}}">Accueil</a>
 			  </li>
 			   <li class="nav-item"><a class="nav-link" href="{{URL::to('about2')}}">Apropos</a></li>
-			  	<li class="nav-item">
-					<a class="nav-link" href="{{URL::to('showdons')}}">voir les Dons</a>
 
+			   <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Annonces <i class="icofont-thin-down"></i></a>
+					<ul class="dropdown-menu" aria-labelledby="dropdown03">
+						<li class="nav-item">
+							<a class="nav-link" href="{{URL::to('showdons')}}">voir les Dons</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{URL::to('publication2')}}"  class="nav-link">faire une demande</a>
+						</li>
+					</ul>
 			  	</li>
 			   <li class="nav-item"><a class="nav-link" href="{{URL::to('contact2')}}" class="--primary">Contact</a></li>
 			   <li class="nav-item"><a href="{{URL::to('login')}}" class="btn btn-main btn-round-full">Logout</a></li>
