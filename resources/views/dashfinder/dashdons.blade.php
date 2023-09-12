@@ -44,9 +44,15 @@
                             <td>{{ $donneur->sexe}}</td>
                             <td>{{ $donneur->numero }}</td>
                             <td>{{ $donneur->groupe}}</td>
-                            <td>		
-                    			<button class="btn btn-success">modifier</button>
-                                <button class="btn btn-danger">supprimer</button>
+                            <td>
+                                <a href="{{route('donneur.edit',$donneur)}}">
+                                    <button class="btn btn-success">modifier</button>
+                                </a>
+                                <form action="{{route('donneur.destroy',$donneur)}}" method="post" style="display: inline">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-danger">supprimer</button>
+                                </form>	
                             </td>
                          </tr>
                          @endforeach

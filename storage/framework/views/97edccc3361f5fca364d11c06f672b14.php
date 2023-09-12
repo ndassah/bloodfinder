@@ -73,7 +73,7 @@
 					</ul>
 			  	</li>
 			   <li class="nav-item"><a class="nav-link" href="<?php echo e(URL::to('contact')); ?>" class="--primary">Contact</a></li>
-			   <li class="nav-item"><a href="<?php echo e(URL::to('login')); ?>" class="btn btn-main btn-round-full">Logout</a></li>
+			   <li class="nav-item"><a href="<?php echo e(URL::to('home')); ?>" class="btn btn-main btn-round-full">Logout</a></li>
 			</ul>
 		  </div>
 		</div>

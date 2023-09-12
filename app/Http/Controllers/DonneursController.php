@@ -126,7 +126,8 @@ class DonneursController extends Controller
         //
         $donneur->delete();
 
-        return redirect()->route('index')->with('success','utilisateur mise a jour');
+        return redirect()->back()->with('success','ok');
+        //return redirect()->route('bloodfinder-admin-show-dons')->with('success','utilisateur mise a jour');
 
     }
 

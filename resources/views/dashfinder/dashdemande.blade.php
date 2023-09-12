@@ -43,9 +43,15 @@
                             <td>{{ $hopitale->location }}</td>
                             <td>{{ $hopitale->matricule }}</td>
                             <td>{{ $hopitale->numero }}</td>
-                            <td>		
-                    			<button class="btn btn-success">modifier</button>
-                                <button class="btn btn-danger">supprimer</button>
+                            <td>
+                                <a href="{{route('hopitale.edit',$hopitale)}}">
+                                    <button class="btn btn-success">modifier</button>
+                                </a>
+                                <form action="{{route('hopitale.destroy',$hopitale)}}" method="post" style="display: inline">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-danger">supprimer</button>
+                                </form>	
                             </td>
                          </tr>
                          @endforeach

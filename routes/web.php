@@ -67,7 +67,7 @@ Route::resource('hopitale', HopitaleController::class)
        Route::resource('annonces', AnnoncesController::class)
         ->only(['index','store','edit','update','destroy']);
         
-Route::get('/bloodfinder-admin',[App\Http\Controllers\AdminController::class,'dash']);
+Route::get('/bloodfinder-admin',[App\Http\Controllers\AdminController::class,'compte']);
 Route::get('/bloodfinder-404',[App\Http\Controllers\AdminController::class,'t404']);
 Route::get('/bloodfinder-admin-show-dons',[App\Http\Controllers\AdminController::class,'dashshowdons']);
 Route::get('/bloodfinder-admin-show-demandes',[App\Http\Controllers\AdminController::class,'dashshowdemandes']);

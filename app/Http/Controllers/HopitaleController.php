@@ -80,7 +80,7 @@ class HopitaleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Hopital $hopitales)
+    public function update(Request $request, Hopitale $hopitales)
     {
         //
         $request->validate([
@@ -112,7 +112,8 @@ class HopitaleController extends Controller
         //
         $hopitales->delete();
 
-        return redirect()->route('index',$hopitales)->with('success','utilisateur mise a jour');
+        return redirect()->back()->with('success','ok');
+        //return redirect()->route('bloodfinder-admin-show-dons')->with('success','utilisateur mise a jour');
 
     }
 }
