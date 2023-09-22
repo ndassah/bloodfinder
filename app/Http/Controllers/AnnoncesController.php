@@ -52,10 +52,7 @@ class AnnoncesController extends Controller
             'location'=>$request->location,
             'type'=>$request->type,
         ]);
-
-        Session::put('donnee',$request->all());
         
-
         return redirect()->route('annonces.index')->with('success','donneurs ajoute');
     }
 

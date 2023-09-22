@@ -14,7 +14,7 @@
 			<div class="col-lg-6 col-md-10 " id="annonces">
 				<div class="appoinment-wrap mt-5 mt-lg-0">
 					<h2 class="mb-2 title-color">Publier une annonce</h2>
-					<p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+					<p class="mb-4">publiez des dons ici</p>
 					     <form id="#" class="appoinment-form" method="post"  action="<?php echo e(route('annonces.store')); ?>" >
                          <?php echo csrf_field(); ?>
                     <div class="row">
@@ -63,7 +63,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" value="<?php echo e(old('location')); ?>" required autocomplete="location" placeholder="location">
+unset($__errorArgs, $__bag); ?>" value="<?php echo e(Session::get('donnee.location') ?? old('location')); ?>" required autocomplete="location" placeholder="location">
                             </div>
                         </div>
                          <div class="col-lg-6">
@@ -81,7 +81,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" name="numero" value="<?php echo e(old('numero')); ?>" required autocomplete="numero" placeholder="Phone Number">
+unset($__errorArgs, $__bag); ?>" name="numero" value="<?php echo e(Session::get('donnee.numero') ?? old('numero')); ?>" required autocomplete="numero" placeholder="Phone Number">
                             </div>
                         </div>
                     </div>
