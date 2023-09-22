@@ -66,7 +66,7 @@ class HopitaleController extends Controller
     public function show()
     {
         //
-        $userEmail= Session::get('user_email');
+        $userEmail= Session::get('user_email2');
         $hopitales = Hopitale::where('email',$userEmail)->first();
         return view('client.detailHopital',compact('hopitales'));
     }

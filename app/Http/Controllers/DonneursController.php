@@ -62,8 +62,6 @@ class DonneursController extends Controller
                 'location'=>$request->location,
                 'sexe'=>$request->sexe,
             ]);
-
-            Session::put('donnee',$request->all());
             
 
             return redirect()->route('login')->with('success','donneurs ajoute');
