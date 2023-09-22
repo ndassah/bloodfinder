@@ -35,6 +35,8 @@ Route::middleware(['auth:donneur'])->group(function(){
         Route::get('/publication',[App\Http\Controllers\ClientController::class,'publication']);
         Route::get('/showdemandes',[App\Http\Controllers\ClientController::class,'showdemandes']);
         Route::get('/demandes',[App\Http\Controllers\ClientController::class,'demandes']);
+        Route::get('/detailDonneur',[App\Http\Controllers\DonneursController::class,'show']);
+
 
 });
 
@@ -48,20 +50,25 @@ Route::middleware(['auth:hopital'])->group(function(){
         Route::get('/publication2',[App\Http\Controllers\ClientController::class,'publication2']);
         Route::get('/showdons',[App\Http\Controllers\ClientController::class,'showdons']);
         Route::get('/dons',[App\Http\Controllers\ClientController::class,'dons']);
+        Route::get('/detailHopital',[App\Http\Controllers\HopitaleController::class,'show']);
+
 });
 
 
 
+Route::get('/contact3',[App\Http\Controllers\ClientController::class,'contact3']);
+Route::get('/about3',[App\Http\Controllers\ClientController::class,'about3']);
 
 
 Route::get('/inscription', [DonneursController::class, 'showRegistrationForm'])->name('register');
 Route::resource('donneur', DonneursController::class)
-        ->only(['index','store','edit','update','destroy','nombreDonneurs']);
+        ->only(['index','store','edit','update','show','destroy','nombreDonneurs']);
 
         
 Route::get('/inscription-hosto', [HopitaleController::class, 'showRegistrationForm'])->name('register2');
 Route::resource('hopitale', HopitaleController::class)
-        ->only(['index','store','edit','update','destroy']);
+        ->only(['index','store','edit','update','show','destroy']);
+//Route::get('/hopitale/{hopitale}/edit,HopitaleController@edit')->name('hopitale.edit');
 
 
        Route::resource('annonces', AnnoncesController::class)

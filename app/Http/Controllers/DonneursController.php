@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Donneurs;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class DonneursController extends Controller
 {
@@ -62,6 +63,7 @@ class DonneursController extends Controller
                 'sexe'=>$request->sexe,
             ]);
 
+            Session::put('donnee',$request->all());
             
 
             return redirect()->route('login')->with('success','donneurs ajoute');
@@ -70,10 +72,12 @@ class DonneursController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Donneurs $donneur)
+    public function show()
     {
         //
-        return view('donneur.show',compact('donneur'));
+        $userEmail= Session::get('user_email');
+        $donneur = Donneurs::where('email',$userEmail)->first();
+        return view('client.detailDonneur',compact('donneur'));
     }
 
     /**

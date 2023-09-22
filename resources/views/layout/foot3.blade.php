@@ -73,6 +73,7 @@
 						</li>
 					</ul>
 			  	</li>
+				  <li class="nav-item"><a class="nav-link" href="{{URL::to('detailHopital')}}">info compte</a></li>		  
 			   <li class="nav-item"><a class="nav-link" href="{{URL::to('contact2')}}" class="--primary">Contact</a></li>
 			   <li class="nav-item"><a href="{{URL::to('home')}}" class="btn btn-main btn-round-full">Logout</a></li>
 			</ul>
@@ -158,7 +159,7 @@
 			<div class="row align-items-center justify-content-between">
 				<div class="col-lg-6">
 					<div class="copyright">
-						&copy; Copyright Reserved to <span class="text-color">Bloodly</span> by <a href="https://www.iai-cameroun.cm/" target="_blank">MBEMDIA Saliou</a>
+						&copy; Copyright Reserved to <span class="text-color">bloodfinder</span> by <a href="https://www.iai-cameroun.cm/" target="_blank">MBEMDIA Saliou</a>
 					</div>
 				</div>
 			</div>

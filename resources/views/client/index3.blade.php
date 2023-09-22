@@ -9,7 +9,7 @@
 				<div class="block">
 					<div class="divider mb-3"></div>
 					<span class="text-uppercase text-sm letter-spacing ">solution sanitaire</span>
-					<h1 class="mb-3 mt-3">Votre partenaire sanitaire de confiance</h1>
+					<h1 class="mb-3 mt-3" style="color: aliceblue">Votre partenaire sanitaire de confiance</h1>
 					
 					<p class="mb-4 pr-5">faire des demandes de sang pres des donneurs pour sauver des vies.</p>
 					<!--<div class="btn-container ">

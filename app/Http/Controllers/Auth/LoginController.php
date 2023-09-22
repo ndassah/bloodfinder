@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\DonneursController;
 
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticateUsers;
 use Illuminate\Support\Facades\Auth;
@@ -50,11 +52,15 @@ class LoginController extends Controller
         $credentials= $request->only('email','password','type');
 
         if(Auth::guard('donneur')->attempt($credentials)){
+            $user = Auth::guard('donneur')->user();
+            Session::put('user_email',$user->email);
                 return view('client.index');
             }elseif(Auth::guard('hopital')->attempt($credentials)){
+                $user = Auth::guard('hopital')->user();
+                Session::put('user_email',$user->email);
                 return view('client.index3');
         }
-    
+
        return redirect()->route('login')->with('error', 'Adresse e-mail ou mot de passe incorrect.');
 }
 

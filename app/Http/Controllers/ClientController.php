@@ -21,11 +21,17 @@ class ClientController extends Controller
     public function contact2(){
         return view('client.contact2');
     }
+    public function contact3(){
+        return view('client.contact3');
+    }
     public function about(){
         return view('client.about');
     }
     public function about2(){
         return view('client.about2');
+    }
+    public function about3(){
+        return view('client.about3');
     }
     public function demandes(){
         return view('client.demandes');

@@ -240,7 +240,7 @@
                                             <th>numero</th>
                                             <th>type</th>
                                             <th>Date de creation</th>
-                                            <th>Date de misa a jour</th>
+                                            <th>Date de mise a jour</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -250,7 +250,7 @@
                                             <th>numero</th>
                                             <th>type</th>
                                             <th>Date de creation</th>
-                                            <th>Date de misa a jour</th>
+                                            <th>Date de mise a jour</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

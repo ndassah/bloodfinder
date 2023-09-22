@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Hopitale;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
+
 
 class HopitaleController extends Controller
 {
@@ -62,12 +63,14 @@ class HopitaleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Hopitale $hopitales)
+    public function show()
     {
         //
-        return view('hopitales.show',compact('hopitales'));
+        $userEmail= Session::get('user_email');
+        $hopitales = Hopitale::where('email',$userEmail)->first();
+        return view('client.detailHopital',compact('hopitales'));
     }
-
+    
     /**
      * Show the form for editing the specified resource.
      */
@@ -116,4 +119,6 @@ class HopitaleController extends Controller
         //return redirect()->route('bloodfinder-admin-show-dons')->with('success','utilisateur mise a jour');
 
     }
+
+    
 }

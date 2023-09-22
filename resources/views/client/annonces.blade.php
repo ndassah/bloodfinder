@@ -14,7 +14,7 @@
 			<div class="col-lg-6 col-md-10 " id="annonces">
 				<div class="appoinment-wrap mt-5 mt-lg-0">
 					<h2 class="mb-2 title-color">Publier une annonce</h2>
-					<p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+					<p class="mb-4">publiez des dons ici</p>
 					     <form id="#" class="appoinment-form" method="post"  action="{{ route('annonces.store') }}" >
                          @csrf
                     <div class="row">
@@ -42,7 +42,7 @@
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input name="location" id="location" type="text" class="form-control rounded @error('location') is-invalid @enderror" value="{{ old('location') }}" required autocomplete="location" placeholder="location">
+                                <input name="location" id="location" type="text" class="form-control rounded @error('location') is-invalid @enderror" value="{{ Session::get('donnee.location') ?? old('location') }}" required autocomplete="location" placeholder="location">
                             </div>
                         </div>
                          <div class="col-lg-6">
@@ -53,7 +53,7 @@
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input id="numero" type="Number" class="form-control rounded @error('numero') is-invalid @enderror" name="numero" value="{{ old('numero') }}" required autocomplete="numero" placeholder="Phone Number">
+                                <input id="numero" type="Number" class="form-control rounded @error('numero') is-invalid @enderror" name="numero" value="{{ Session::get('donnee.numero') ?? old('numero') }}" required autocomplete="numero" placeholder="Phone Number">
                             </div>
                         </div>
                     </div>

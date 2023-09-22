@@ -60,6 +60,8 @@
 			  <li class="nav-item active">
 				<a class="nav-link" href="{{URL::to('home')}}">Accueil</a>
 			  </li>
+			  <li class="nav-item"><a class="nav-link" href="{{URL::to('about3')}}">Apropos</a></li>
+			  <li class="nav-item"><a class="nav-link" href="{{URL::to('contact3')}}" class="--primary">Contact</a></li>
 			  <li class="nav-item"><a class="nav-link" href="{{URL::to('inscription')}}" class="--primary">Inscription</a></li>
 			  <li class="nav-item"><a class="nav-link" href="{{URL::to('login')}}" class="--primary">login</a></li>
 
@@ -146,7 +148,7 @@
 			<div class="row align-items-center justify-content-between">
 				<div class="col-lg-6">
 					<div class="copyright">
-						&copy; Copyright Reserved to <span class="text-color">Bloodly</span> by <a href="https://www.iai-cameroun.cm/" target="_blank">MBEMDIA Saliou</a>
+						&copy; Copyright Reserved to <span class="text-color">Bloodfinder</span> by <a href="https://www.iai-cameroun.cm/" target="_blank">MBEMDIA Saliou</a>
 					</div>
 				</div>
 			</div>
