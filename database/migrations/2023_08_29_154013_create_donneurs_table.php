@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('password',255);
             $table->enum('sexe',['homme','femme']);
             $table->enum('groupe',['A+','A-','B+','B-','AB+','AB-','O+','O-']);
+            $table->integer('age')->default(18);
             $table->timestamps();
         });
     }

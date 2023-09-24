@@ -47,6 +47,7 @@ class DonneursController extends Controller
                 'cni'=>['required','string','unique:donneurs'],
                 'location'=>['required','string','max:255'],
                 'sexe'=>['required','string'],
+                'age'=>['required','integer','between:18,47'],
             ]);
 
             
@@ -61,6 +62,7 @@ class DonneursController extends Controller
                 'cni'=>$request->cni,
                 'location'=>$request->location,
                 'sexe'=>$request->sexe,
+                'age'=>$request->age,
             ]);
             
 
@@ -103,6 +105,7 @@ class DonneursController extends Controller
             'cni'=>['required','string','unique:donneurs'],
             'location'=>['required','string','max:255'],
             'sexe'=>['required','string'],
+            'age'=>['required','integer','between:18,47'],
         ]);
 
         $donneur ->update([
@@ -115,6 +118,7 @@ class DonneursController extends Controller
             'cni'=>$request->cni,
             'location'=>$request->location,
             'sexe'=>$request->sexe,
+            'age'=>$request->age,
         ]);
 
         return redirect()->route('donneur.show',$donneur)->with('success','utilisateur mise a jour');

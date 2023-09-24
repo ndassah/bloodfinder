@@ -57,7 +57,7 @@ class LoginController extends Controller
                 return view('client.index');
             }elseif(Auth::guard('hopital')->attempt($credentials)){
                 $user2 = Auth::guard('hopital')->user();
-                Session::put('user_email2',$user2->email);
+               Session::put('user_email2',$user2->email);
                 return view('client.index3');
         }
 

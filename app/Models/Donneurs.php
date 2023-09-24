@@ -26,6 +26,7 @@ class Donneurs extends Model implements AuthenticatableContract
         'sexe',
         'numero',
         'cni',
+        'age',
         'email',
         'type',
         'password',

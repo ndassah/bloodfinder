@@ -9,9 +9,10 @@
 
         <p><b>Nom:</b> <?php echo e($donneur->nom); ?></p>
         <p><b>Prenom: </b> <?php echo e($donneur->prenom); ?></p>
+        <p><b>age:</b> <?php echo e($donneur->age); ?> ans</p>
+        <p><b>sexe:</b> <?php echo e($donneur->sexe); ?></p>
         <p><b>Localite:</b> <?php echo e($donneur->location); ?></p>
         <p><b>email:</b> <?php echo e($donneur->email); ?></p>
-        <p><b>sexe:</b> <?php echo e($donneur->sexe); ?></p>
         <p><b>numero:</b> <?php echo e($donneur->numero); ?></p>
         <p><b>groupe sanguin: </b><?php echo e($donneur->groupe); ?></p>
         <p><b>cni: </b> <?php echo e($donneur->cni); ?></p>
