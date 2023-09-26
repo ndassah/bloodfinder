@@ -46,6 +46,7 @@ class HopitaleController extends Controller
                 'numero'=>['required','string','max:10'],
                 'matricule'=>['required','string','unique:hopitales'],
                 'location'=>['required','string','max:255'],
+                'classification'=>['required','string'],
             ]);
 
             $hopitales = Hopitale::create([
@@ -55,6 +56,7 @@ class HopitaleController extends Controller
                 'numero'=>$request->numero,
                 'matricule'=>$request->matricule,
                 'location'=>$request->location,
+                'classification'=>$request->classification,
             ]);
 
             return redirect()->route('login')->with('success','hopitale ajoute');
@@ -93,6 +95,8 @@ class HopitaleController extends Controller
             'numero'=>['required','string','max:10'],
             'matricule'=>['required','string','unique:hopitales'],
             'location'=>['required','string','max:255'],
+            'classification'=>['required','string'],
+
         ]);
 
         $hopitales ->update([
@@ -102,6 +106,7 @@ class HopitaleController extends Controller
             'numero'=>$request->numero,
             'matricule'=>$request->matricule,
             'location'=>$request->location,
+            'classification'=>$request->classification,
         ]);
 
         return redirect()->route('hopitales.show',$hopitales)->with('success','utilisateur mise a jour');

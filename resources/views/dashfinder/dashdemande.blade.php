@@ -31,6 +31,7 @@
                             <th>email</th>
                             <th>Localité</th> 
                             <th>matricule</th>
+                            <th>classification</th>
                             <th>numero</th>
                             <th>actions</th>
                         </tr>
@@ -42,6 +43,7 @@
                             <td>{{ $hopitale->email }}</td>
                             <td>{{ $hopitale->location }}</td>
                             <td>{{ $hopitale->matricule }}</td>
+                            <td>{{ $hopitale->classification }}</td>
                             <td>{{ $hopitale->numero }}</td>
                             <td>
                                 <a href="{{route('hopitale.edit',$hopitale)}}">

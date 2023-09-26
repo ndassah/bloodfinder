@@ -76,6 +76,27 @@
                                             @enderror
                                         </div>
                                     </div>
+
+                                    <div class="form-group row">
+                                        <label for="classification" class="col-md-4 col-form-label text-md-right">{{ __('classification') }}</label>
+            
+                                        <div class="col-md-6">
+                                            <select id="classification" class="form-control rounded @error('classification') is-invalid @enderror" name="classification" required>
+                                                <option value="district">District</option>
+                                                <option value="regional">Regional</option>
+                                                <option value="spécialisé">Specialisé</option>
+                                                <option value="universitaires">Universitaires</option>
+                                                <option value="centrale">Centrale</option>
+                                                <option value="gériatrique">Gériatrique</option>
+                                            </select>
+            
+                                            @error('classification')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                        </div>
+                                    </div>
         
                                     <div class="form-group row">
                                         <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Mot de passe') }}</label>

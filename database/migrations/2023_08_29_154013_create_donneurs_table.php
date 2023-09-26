@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom',100);
             $table->string('prenom',100);
-            $table->string('type')->default('donneur');
+            $table->string('type')->default('donateur');
             $table->string('numero',20);
             $table->string('location',100);
             $table->string('email',191)->unique();

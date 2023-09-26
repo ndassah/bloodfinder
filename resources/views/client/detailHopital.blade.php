@@ -11,6 +11,7 @@
         <p><b>Localite:</b> {{$hopitales->location}}</p>
         <p><b>email:</b> {{$hopitales->email}}</p>
         <p><b>Immatriculation:</b> {{$hopitales->matricule}}</p>
+        <p><b>Classification:</b> {{$hopitales->classification}}</p>
         <p><b>numero:</b> {{$hopitales->numero}}</p>
     </div>
 

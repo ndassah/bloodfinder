@@ -75,5 +75,18 @@ class AdminController extends Controller
         return view('dashfinder.showdons',['dons'=>$dons]);
     }
     
+    public function connect(){
+        return view('dashfinder.loginAdmin');
+    }
+
+    public function authenticate(Request $request){
+        $credentials = $request->only('email','password');
+
+        if($credentials['email']=='admin@gmail.com' && $credentials['password']=='bloodfinder.admin'){
+            return redirect()->intended('/bloofinder-admin');
+        }
+
+        return redirect()->route('admin')->with('error','echec');
+    }
 }
 

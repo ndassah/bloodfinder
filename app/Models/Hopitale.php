@@ -24,6 +24,7 @@ class Hopitale extends Model implements AuthenticatableContract
         'numero',
         'matricule',
         'email',
+        'classification',
         'type',
         'password',
     ];

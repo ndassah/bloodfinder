@@ -11,6 +11,7 @@
         <p><b>Localite:</b> <?php echo e($hopitales->location); ?></p>
         <p><b>email:</b> <?php echo e($hopitales->email); ?></p>
         <p><b>Immatriculation:</b> <?php echo e($hopitales->matricule); ?></p>
+        <p><b>Classification:</b> <?php echo e($hopitales->classification); ?></p>
         <p><b>numero:</b> <?php echo e($hopitales->numero); ?></p>
     </div>
 

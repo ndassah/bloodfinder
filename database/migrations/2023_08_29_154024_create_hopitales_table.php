@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('email',191)->unique();
             $table->string('matricule',20);
             $table->string('password',255);
+            $table->enum('classification',['district','regional','centrale','universitaires','spécialisé','gériatrique']);
+
             $table->timestamps();
         });
     }

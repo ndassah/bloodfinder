@@ -38,7 +38,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                donneurs</div>
+                                                donateurs</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $donneurs}}</div>
                                         </div>
                                         <div class="col-auto">
@@ -98,9 +98,9 @@
                                 </div>
                                 <div class="card-body">
                                     <p>ici vous avez une vue d'ensemble sur les different comptes existant <br> ainsi que les annonces</p>
-                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                         Animi porro consectetur delectus laborum, facere dolorum eum reprehenderit ipsum ipsam inventore?
-                                         Aut atque odit nemo cumque esse laboriosam nisi neque. Laborum..</p>
+                                    <p class="mb-0">ce partie de notre plate-forme vous montre une vue d'ensemble sur les différents comptes
+                                        crée. ainsi vous pourez voir le nombre de comptes de donateurs, des hopitaux et le nombre des annonces publiés
+                                    </p>
                                 </div>
                             </div>
 
