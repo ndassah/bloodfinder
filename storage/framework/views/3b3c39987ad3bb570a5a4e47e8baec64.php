@@ -85,7 +85,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">gestion des comptes:</h6>
-                        <a class="collapse-item" href="<?php echo e(URL::to('donneur')); ?>">comptes de donneurs</a>
+                        <a class="collapse-item" href="<?php echo e(URL::to('donneur')); ?>">comptes de donateurs</a>
                         <a class="collapse-item" href="<?php echo e(URL::to('hopitale')); ?>">comptes des hopitaux</a>
                     </div>
                 </div>
@@ -111,11 +111,7 @@
                         <h6 class="collapse-header">Ecrans de login:</h6>
                         <a class="collapse-item" href="<?php echo e(URL::to('login')); ?>">Login</a>
                         <a class="collapse-item" href="<?php echo e(URL::to('register')); ?>">Inscription</a>
-                        <a class="collapse-item" href="#">mot de passe oublié</a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Autres Pages:</h6>
-                        <a class="collapse-item" href="<?php echo e(URL::to('bloodfinder-404')); ?>">404 Page</a>
-                        <a class="collapse-item" href="<?php echo e(URL::to('bloodfinder-admin-empty')); ?>">Blank Page</a>
                     </div>
                 </div>
             </li>

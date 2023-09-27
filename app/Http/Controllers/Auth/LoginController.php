@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DonneursController;
 
 use Illuminate\Support\Facades\Session;
@@ -51,7 +52,9 @@ class LoginController extends Controller
     {
         $credentials= $request->only('email','password','type');
 
-        if(Auth::guard('donneur')->attempt($credentials)){
+        if($this->isAdmin($credentials)){
+            return view('dashfinder.foot2');
+        }elseif(Auth::guard('donneur')->attempt($credentials)){
             $user = Auth::guard('donneur')->user();
             Session::put('user_email',$user->email);
                 return view('client.index');
@@ -70,5 +73,9 @@ class LoginController extends Controller
         Auth::logout();
 
         return redirect('/login');
+    }
+
+    private function isAdmin($credentials){
+        return $credentials['email'] === 'admin@gmail.com' && $credentials['password'] ==='bloodfinder-admin';
     }
 }

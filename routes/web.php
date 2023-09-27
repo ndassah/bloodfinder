@@ -4,6 +4,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DonneursController;
 use App\Http\Controllers\HopitaleController;
 use App\Http\Controllers\AnnoncesController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
@@ -85,14 +86,14 @@ Route::get('/bloodfinder-admin-data',[App\Http\Controllers\AdminController::clas
 Route::get('/bloodfinder-admin-empty',[App\Http\Controllers\AdminController::class,'blank']);
 Route::get('/dashdons',[App\Http\Controllers\AdminController::class,'dashdons']);
 Route::get('/dashdemande',[App\Http\Controllers\AdminController::class,'dashdemande']);
+Route::get('/liste-data',[App\Http\Controllers\AdminController::class,'getAllData']);
+Route::get('/compte',[App\Http\Controllers\AdminController::class,'compte']);
 
 
 
 Route::get('/login',[App\Http\Controllers\Auth\LoginController::class,'dologin'])->name('login');
 Route::post('/login',[App\Http\Controllers\Auth\LoginController::class,'login']);
 
-Route::get('/liste-data',[App\Http\Controllers\AdminController::class,'getAllData']);
-Route::get('/compte',[App\Http\Controllers\AdminController::class,'compte']);
 
 Auth::routes();
 

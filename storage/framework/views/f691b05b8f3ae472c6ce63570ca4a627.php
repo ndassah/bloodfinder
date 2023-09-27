@@ -99,7 +99,7 @@ unset($__errorArgs, $__bag); ?>
                                         <div class="row mb-3">
                                             <label for="type" class="col-md-4 col-form-label text-md-end"><?php echo e(__('type de compte')); ?></label>
                                             <select name="type" id="type">
-                                                <option value="donneur">Donneur</option>
+                                                <option value="donateur">Donateur</option>
                                                 <option value="hopital">Hopital</option>
                                             </select>
                                             <?php $__errorArgs = ['type'];

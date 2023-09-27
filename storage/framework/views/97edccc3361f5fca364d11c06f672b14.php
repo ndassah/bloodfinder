@@ -48,7 +48,7 @@
 	<nav class="navbar navbar-expand-lg navigation" id="navbar">
 		<div class="container">
 		 	 <a class="navbar-brand" href="<?php echo e(URL::to('indexDonneurs')); ?>">
-				<p class="moi">Bloodfinder <br> <span style="font-size: 16px">donneurs</span></p>
+				<p class="moi">Bloodfinder <br> <span style="font-size: 16px">donateurs</span></p>
 			  </a>
 
 		  	<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">

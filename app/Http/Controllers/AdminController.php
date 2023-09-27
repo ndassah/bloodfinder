@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Http\Request;
 use App\Models\Donneurs;
 use App\Models\Annonces;
@@ -73,20 +74,6 @@ class AdminController extends Controller
         $dons = Annonces::where('type','dons')->get();
 
         return view('dashfinder.showdons',['dons'=>$dons]);
-    }
-    
-    public function connect(){
-        return view('dashfinder.loginAdmin');
-    }
-
-    public function authenticate(Request $request){
-        $credentials = $request->only('email','password');
-
-        if($credentials['email']=='admin@gmail.com' && $credentials['password']=='bloodfinder.admin'){
-            return redirect()->intended('/bloofinder-admin');
-        }
-
-        return redirect()->route('admin')->with('error','echec');
     }
 }
 
